@@ -10,8 +10,9 @@
 ///***************************************************************************************************************
 void sh1106_begin(int invert, uint8_t contrast, uint8_t Vpp);
 void sh1106_clear(void);
-uint8_t sh1106_gotoXY(uint8_t x, uint8_t y);
+uint8_t sh1106_goto(uint8_t x, uint8_t y);
+void sh1106_write_str(char* str);
 uint32_t sh1106_write(uint8_t uint8_t);
-uint8_t sh1106_writeBitmap(const uint8_t *bitmap, uint8_t x, uint8_t y, uint8_t width, uint8_t height);
+uint8_t sh1106_write_bitmap(const uint8_t *bitmap, uint8_t x, uint8_t y, uint8_t width, uint8_t height);
 
 #endif

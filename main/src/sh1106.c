@@ -126,9 +126,9 @@ static const uint8_t ASCII[][5] = {
 };
 
 void nop_delay(void);
-void sh1106_advanceXY(uint8_t columns);
-void sh1106_writeLcdBuf(uint8_t dataOrCommand, const uint8_t *data, uint16_t count);
-void sh1106_writeLcd(uint8_t dataOrCommand, uint8_t data);
+void sh1106_advance(uint8_t columns);
+void sh1106_write_lcd_buf(uint8_t dataOrCommand, const uint8_t *data, uint16_t count);
+void sh1106_write_lcd(uint8_t dataOrCommand, uint8_t data);
 
 void nop_delay(void) {
   for (int i = 0; i < 2; i++) {
@@ -222,32 +222,32 @@ void sh1106_begin(int invert, uint8_t contrast, uint8_t Vpp) {
   //SH1106_PORT |= PIN_RESET;
 
 
-  sh1106_writeLcd(SH1106_COMMAND, 0xAE);    /*display off*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x02);    /*set lower column address*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x10);    /*set higher column address*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x40);    /*set display start line*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xB0);    /*set page address*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x81);    /*contract control*/
-  sh1106_writeLcd(SH1106_COMMAND, contrast);    /*128*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xA1);    /*set segment remap*/
-  sh1106_writeLcd(SH1106_COMMAND, invertSetting);    /*normal / reverse*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xA8);    /*multiplex ratio*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x3F);    /*duty = 1/32*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xAD);    /*set charge pump enable*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x8B);     /*external VCC   */
-  sh1106_writeLcd(SH1106_COMMAND, 0x30 | Vpp);    /*0X30---0X33  set VPP   9V liangdu!!!!*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xC8);    /*Com scan direction*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xD3);    /*set display offset*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x00);   /*   0x20  */
-  sh1106_writeLcd(SH1106_COMMAND, 0xD5);    /*set osc division*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x80);
-  sh1106_writeLcd(SH1106_COMMAND, 0xD9);    /*set pre-charge period*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x1F);    /*0x22*/
-  sh1106_writeLcd(SH1106_COMMAND, 0xDA);    /*set COM pins*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x12);
-  sh1106_writeLcd(SH1106_COMMAND, 0xDB);    /*set vcomh*/
-  sh1106_writeLcd(SH1106_COMMAND, 0x40);
-  sh1106_writeLcd(SH1106_COMMAND, 0xAF);    /*display ON*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xAE);    /*display off*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x02);    /*set lower column address*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x10);    /*set higher column address*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x40);    /*set display start line*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xB0);    /*set page address*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x81);    /*contract control*/
+  sh1106_write_lcd(SH1106_COMMAND, contrast);    /*128*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xA1);    /*set segment remap*/
+  sh1106_write_lcd(SH1106_COMMAND, invertSetting);    /*normal / reverse*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xA8);    /*multiplex ratio*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x3F);    /*duty = 1/32*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xAD);    /*set charge pump enable*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x8B);     /*external VCC   */
+  sh1106_write_lcd(SH1106_COMMAND, 0x30 | Vpp);    /*0X30---0X33  set VPP   9V liangdu!!!!*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xC8);    /*Com scan direction*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xD3);    /*set display offset*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x00);   /*   0x20  */
+  sh1106_write_lcd(SH1106_COMMAND, 0xD5);    /*set osc division*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x80);
+  sh1106_write_lcd(SH1106_COMMAND, 0xD9);    /*set pre-charge period*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x1F);    /*0x22*/
+  sh1106_write_lcd(SH1106_COMMAND, 0xDA);    /*set COM pins*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x12);
+  sh1106_write_lcd(SH1106_COMMAND, 0xDB);    /*set vcomh*/
+  sh1106_write_lcd(SH1106_COMMAND, 0x40);
+  sh1106_write_lcd(SH1106_COMMAND, 0xAF);    /*display ON*/
 
   sh1106_clear();
 }
@@ -257,28 +257,34 @@ uint32_t sh1106_write(uint8_t data)
   // Non-ASCII characters are not supported.
   if (data < 0x20 || data > 0x7F) return 0;
   if (sh1106_m_Column >= 123)
-    sh1106_advanceXY(SH1106_X_PIXELS - sh1106_m_Column);
+    sh1106_advance(SH1106_X_PIXELS - sh1106_m_Column);
 
   uint8_t buf[6];
   memcpy(buf, ASCII[data - 0x20], 5);
   buf[5] = 0x00;
-  sh1106_writeLcdBuf(SH1106_DATA, buf, 6);
-  sh1106_advanceXY(6);
+  sh1106_write_lcd_buf(SH1106_DATA, buf, 6);
+  sh1106_advance(6);
   return 1;
+}
+
+void sh1106_write_str(char* str) {
+  while (*str) {
+    sh1106_write(*str++);
+  }
 }
 
 void sh1106_clear(void)
 {
   for (uint8_t j = SH1106_ROWS; j > 0; j--)
     {
-      sh1106_gotoXY(0, j-1);
+      sh1106_goto(0, j-1);
       for (uint8_t i = SH1106_X_PIXELS; i > 0; i--)
-        sh1106_writeLcd(SH1106_DATA, 0x00);
+        sh1106_write_lcd(SH1106_DATA, 0x00);
     }
-  sh1106_gotoXY(0, 0);
+  sh1106_goto(0, 0);
 }
 
-uint8_t sh1106_gotoXY(uint8_t x, uint8_t y)
+uint8_t sh1106_goto(uint8_t x, uint8_t y)
 {
   if (x >= SH1106_X_PIXELS || y >= SH1106_ROWS) return SH1106_ERROR;
   sh1106_m_Column = x;
@@ -286,28 +292,28 @@ uint8_t sh1106_gotoXY(uint8_t x, uint8_t y)
   x = x + 2;										// Panel is 128 pixels wide, controller RAM has space for 132,
   // it's centered so add an offset to ram address.
 
-  sh1106_writeLcd(SH1106_COMMAND, 0xB0 + y);		// Set row
-  sh1106_writeLcd(SH1106_COMMAND, x & 0xF);		// Set lower column address
-  sh1106_writeLcd(SH1106_COMMAND, 0x10 | (x >> 4));// Set higher column address
+  sh1106_write_lcd(SH1106_COMMAND, 0xB0 + y);		// Set row
+  sh1106_write_lcd(SH1106_COMMAND, x & 0xF);		// Set lower column address
+  sh1106_write_lcd(SH1106_COMMAND, 0x10 | (x >> 4));// Set higher column address
   return SH1106_SUCCESS;
 }
 
-uint8_t sh1106_writeBitmap(const uint8_t *bitmap, uint8_t x, uint8_t y, uint8_t width, uint8_t height)
+uint8_t sh1106_write_bitmap(const uint8_t *bitmap, uint8_t x, uint8_t y, uint8_t width, uint8_t height)
 {
-  if (sh1106_gotoXY(x, y) == SH1106_ERROR) return SH1106_ERROR;
+  if (sh1106_goto(x, y) == SH1106_ERROR) return SH1106_ERROR;
   const uint8_t *maxY = bitmap + height * width;
 
   for (const uint8_t *by = bitmap; by < maxY; by += width)
     {
-      sh1106_writeLcdBuf(SH1106_DATA, by , width);
-      sh1106_gotoXY(sh1106_m_Column, sh1106_m_Line + 1);
+      sh1106_write_lcd_buf(SH1106_DATA, by , width);
+      sh1106_goto(sh1106_m_Column, sh1106_m_Line + 1);
     }
 
-  sh1106_advanceXY(width);
+  sh1106_advance(width);
   return SH1106_SUCCESS;
 }
 
-void sh1106_advanceXY(uint8_t columns)
+void sh1106_advance(uint8_t columns)
 {
   sh1106_m_Column += columns;
   if (sh1106_m_Column >= SH1106_X_PIXELS)
@@ -315,11 +321,11 @@ void sh1106_advanceXY(uint8_t columns)
       sh1106_m_Column %= SH1106_X_PIXELS;
       sh1106_m_Line++;
       sh1106_m_Line %= SH1106_ROWS;
-      sh1106_gotoXY(sh1106_m_Column, sh1106_m_Line);
+      sh1106_goto(sh1106_m_Column, sh1106_m_Line);
     }
 }
 
-void sh1106_writeLcdBuf(uint8_t dataOrCommand, const uint8_t *data, uint16_t count)
+void sh1106_write_lcd_buf(uint8_t dataOrCommand, const uint8_t *data, uint16_t count)
 {
       gpio_clear(GPIOB, GPIO1); // ~CS
 
@@ -336,7 +342,7 @@ void sh1106_writeLcdBuf(uint8_t dataOrCommand, const uint8_t *data, uint16_t cou
       nop_delay();
 }
 
-void sh1106_writeLcd(uint8_t dataOrCommand, uint8_t data)
+void sh1106_write_lcd(uint8_t dataOrCommand, uint8_t data)
 {
   gpio_clear(GPIOB, GPIO1); // ~CS
   //spi_send8(SPI2, dataOrCommand);
