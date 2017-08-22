@@ -2,3 +2,4 @@
 *.map
 *.elf
 *.bin
+*.d
