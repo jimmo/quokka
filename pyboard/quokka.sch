@@ -54,12 +54,12 @@ $EndDescr
 $Comp
 L PyBoard U?
 U 1 1 59DC8B10
-P 8500 1600
-F 0 "U?" H 8500 1450 60  0000 C CNN
-F 1 "PyBoard" H 8500 1750 60  0000 C CNN
-F 2 "" H 8500 1600 60  0001 C CNN
-F 3 "" H 8500 1600 60  0001 C CNN
-	1    8500 1600
+P 7900 1600
+F 0 "U?" H 7900 1450 60  0000 C CNN
+F 1 "PyBoard" H 7900 1750 60  0000 C CNN
+F 2 "" H 7900 1600 60  0001 C CNN
+F 3 "" H 7900 1600 60  0001 C CNN
+	1    7900 1600
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -312,39 +312,39 @@ F 3 "" H 6150 5550 50  0001 C CNN
 	1    6300 5550
 	1    0    0    -1  
 $EndComp
-Text GLabel 10750 1700 2    60   Input ~ 0
+Text GLabel 10150 1700 2    60   Input ~ 0
 MOSI1
-Text GLabel 10750 1800 2    60   Input ~ 0
+Text GLabel 10150 1800 2    60   Input ~ 0
 MISO1
-Text GLabel 10750 1900 2    60   Input ~ 0
+Text GLabel 10150 1900 2    60   Input ~ 0
 SCK1
-Text GLabel 10750 2000 2    60   Input ~ 0
+Text GLabel 10150 2000 2    60   Input ~ 0
 ~SS1
-Text GLabel 6550 1500 0    60   Input ~ 0
+Text GLabel 5950 1500 0    60   Input ~ 0
 MOSI2
-Text GLabel 6550 1400 0    60   Input ~ 0
+Text GLabel 5950 1400 0    60   Input ~ 0
 MISO2
-Text GLabel 6550 1300 0    60   Input ~ 0
+Text GLabel 5950 1300 0    60   Input ~ 0
 SCK2
-Text GLabel 6550 1200 0    60   Input ~ 0
+Text GLabel 5950 1200 0    60   Input ~ 0
 ~SS2
-Text GLabel 6550 1700 0    60   Input ~ 0
+Text GLabel 5950 1700 0    60   Input ~ 0
 SCL1
-Text GLabel 6550 1800 0    60   Input ~ 0
+Text GLabel 5950 1800 0    60   Input ~ 0
 SDA1
-Text GLabel 10750 1500 2    60   Input ~ 0
+Text GLabel 10150 1500 2    60   Input ~ 0
 SCL2
-Text GLabel 10750 1400 2    60   Input ~ 0
+Text GLabel 10150 1400 2    60   Input ~ 0
 SDA2
-Text GLabel 7400 3000 3    60   Input ~ 0
+Text GLabel 6800 3000 3    60   Input ~ 0
 LED_BLUE
-Text GLabel 7500 3000 3    60   Input ~ 0
+Text GLabel 6900 3000 3    60   Input ~ 0
 LED_YELLOW
-Text GLabel 7600 3000 3    60   Input ~ 0
+Text GLabel 7000 3000 3    60   Input ~ 0
 LED_GREEN
-Text GLabel 7700 3000 3    60   Input ~ 0
+Text GLabel 7100 3000 3    60   Input ~ 0
 LED_RED
-Text GLabel 8200 3000 3    60   Input ~ 0
+Text GLabel 7600 3000 3    60   Input ~ 0
 SW_USR
 $Comp
 L LED_Small D?
@@ -486,13 +486,13 @@ Text GLabel 7750 5450 1    60   Input ~ 0
 LED_GREEN
 Text GLabel 7400 5450 1    60   Input ~ 0
 LED_RED
-Text GLabel 8300 3000 3    60   Input ~ 0
+Text GLabel 7700 3000 3    60   Input ~ 0
 SW1
-Text GLabel 8400 3000 3    60   Input ~ 0
+Text GLabel 7800 3000 3    60   Input ~ 0
 SW2
-Text GLabel 8500 3000 3    60   Input ~ 0
+Text GLabel 7900 3000 3    60   Input ~ 0
 SW3
-Text GLabel 8600 3000 3    60   Input ~ 0
+Text GLabel 8000 3000 3    60   Input ~ 0
 SW4
 $Comp
 L GND #PWR013
@@ -625,9 +625,9 @@ F 3 "" H 5450 7200 50  0001 C CNN
 	1    5450 7200
 	1    0    0    -1  
 $EndComp
-Text GLabel 10450 2550 3    60   Input ~ 0
+Text GLabel 9850 2550 3    60   Input ~ 0
 DAC1
-Text GLabel 10600 2550 3    60   Input ~ 0
+Text GLabel 10000 2550 3    60   Input ~ 0
 DAC2
 $Comp
 L Grove_I2C J?
@@ -797,56 +797,56 @@ $EndComp
 $Comp
 L NRF51822_GT82C02 U?
 U 1 1 59DD9EBF
-P 4500 1050
-F 0 "U?" H 4500 1150 60  0000 C CNN
-F 1 "NRF51822_GT82C02" H 4500 1350 60  0000 C CNN
-F 2 "" H 4450 1050 60  0001 C CNN
-F 3 "" H 4450 1050 60  0001 C CNN
-	1    4500 1050
+P 3200 1250
+F 0 "U?" H 3200 1350 60  0000 C CNN
+F 1 "NRF51822_GT82C02" H 3200 1550 60  0000 C CNN
+F 2 "" H 3150 1250 60  0001 C CNN
+F 3 "" H 3150 1250 60  0001 C CNN
+	1    3200 1250
 	1    0    0    -1  
 $EndComp
-Text GLabel 3600 900  0    60   Input ~ 0
+Text GLabel 2300 1100 0    60   Input ~ 0
 NRF_MOSI
-Text GLabel 3600 1000 0    60   Input ~ 0
+Text GLabel 2300 1200 0    60   Input ~ 0
 NRF_MISO
-Text GLabel 3600 1100 0    60   Input ~ 0
+Text GLabel 2300 1300 0    60   Input ~ 0
 NRF_SCK
-Text GLabel 3600 1200 0    60   Input ~ 0
+Text GLabel 2300 1400 0    60   Input ~ 0
 NRF_TX
-Text GLabel 3600 1300 0    60   Input ~ 0
+Text GLabel 2300 1500 0    60   Input ~ 0
 NRF_RX
 $Comp
 L VCC #PWR025
 U 1 1 59DDA7DE
-P 5550 1400
-F 0 "#PWR025" H 5550 1250 50  0001 C CNN
-F 1 "VCC" H 5550 1550 50  0000 C CNN
-F 2 "" H 5550 1400 50  0001 C CNN
-F 3 "" H 5550 1400 50  0001 C CNN
-	1    5550 1400
+P 4250 1600
+F 0 "#PWR025" H 4250 1450 50  0001 C CNN
+F 1 "VCC" H 4250 1750 50  0000 C CNN
+F 2 "" H 4250 1600 50  0001 C CNN
+F 3 "" H 4250 1600 50  0001 C CNN
+	1    4250 1600
 	-1   0    0    1   
 $EndComp
 $Comp
 L GND #PWR026
 U 1 1 59DDA83E
-P 5350 1400
-F 0 "#PWR026" H 5350 1150 50  0001 C CNN
-F 1 "GND" H 5350 1250 50  0000 C CNN
-F 2 "" H 5350 1400 50  0001 C CNN
-F 3 "" H 5350 1400 50  0001 C CNN
-	1    5350 1400
+P 4050 1600
+F 0 "#PWR026" H 4050 1350 50  0001 C CNN
+F 1 "GND" H 4050 1450 50  0000 C CNN
+F 2 "" H 4050 1600 50  0001 C CNN
+F 3 "" H 4050 1600 50  0001 C CNN
+	1    4050 1600
 	1    0    0    -1  
 $EndComp
-Text GLabel 5400 1000 2    60   Input ~ 0
+Text GLabel 4100 1200 2    60   Input ~ 0
 NRF_SWDIO
-Text GLabel 5400 900  2    60   Input ~ 0
+Text GLabel 4100 1100 2    60   Input ~ 0
 NRF_SWDCK
-NoConn ~ 4300 1600
-NoConn ~ 4400 1600
-NoConn ~ 4500 1600
-NoConn ~ 4600 1600
-NoConn ~ 4700 1600
-NoConn ~ 5250 1100
+NoConn ~ 3000 1800
+NoConn ~ 3100 1800
+NoConn ~ 3200 1800
+NoConn ~ 3300 1800
+NoConn ~ 3400 1800
+NoConn ~ 3950 1300
 $Comp
 L VCC #PWR027
 U 1 1 59DDB1CD
@@ -871,7 +871,7 @@ F 3 "" H 850 1100 50  0001 C CNN
 $EndComp
 Text Notes 1000 750  0    60   ~ 0
 TODO: pin ordering for JST battery
-Text Notes 4050 1800 0    60   ~ 0
+Text Notes 2750 2000 0    60   ~ 0
 TODO: NRF GPIO (maybe debug LED)
 $Comp
 L LSM303C U?
@@ -1208,53 +1208,53 @@ Wire Wire Line
 	5450 7300 5450 7400
 Connection ~ 5450 7400
 Wire Wire Line
-	6550 1200 6800 1200
+	5950 1200 6200 1200
 Wire Wire Line
-	6800 1300 6550 1300
+	6200 1300 5950 1300
 Wire Wire Line
-	6550 1400 6800 1400
+	5950 1400 6200 1400
 Wire Wire Line
-	6800 1500 6550 1500
+	6200 1500 5950 1500
 Wire Wire Line
-	6550 1700 6800 1700
+	5950 1700 6200 1700
 Wire Wire Line
-	6550 1800 6800 1800
+	5950 1800 6200 1800
 Wire Wire Line
-	7400 2750 7400 3000
+	6800 2750 6800 3000
 Wire Wire Line
-	7500 2750 7500 3000
+	6900 2750 6900 3000
+Wire Wire Line
+	7000 2750 7000 3000
+Wire Wire Line
+	7100 2750 7100 3000
 Wire Wire Line
 	7600 2750 7600 3000
 Wire Wire Line
 	7700 2750 7700 3000
 Wire Wire Line
-	8200 2750 8200 3000
+	7800 2750 7800 3000
 Wire Wire Line
-	8300 2750 8300 3000
+	7900 2750 7900 3000
 Wire Wire Line
-	8400 2750 8400 3000
+	8000 2750 8000 3000
 Wire Wire Line
-	8500 2750 8500 3000
+	9750 1400 10150 1400
 Wire Wire Line
-	8600 2750 8600 3000
+	10150 1500 9750 1500
 Wire Wire Line
-	10350 1400 10750 1400
+	9750 1700 10150 1700
 Wire Wire Line
-	10750 1500 10350 1500
+	10150 1800 9750 1800
 Wire Wire Line
-	10350 1700 10750 1700
+	9750 1900 10150 1900
 Wire Wire Line
-	10750 1800 10350 1800
+	9750 2000 10150 2000
 Wire Wire Line
-	10350 1900 10750 1900
+	9850 2550 9850 1900
+Connection ~ 9850 1900
 Wire Wire Line
-	10350 2000 10750 2000
-Wire Wire Line
-	10450 2550 10450 1900
-Connection ~ 10450 1900
-Wire Wire Line
-	10600 2550 10600 2000
-Connection ~ 10600 2000
+	10000 2550 10000 2000
+Connection ~ 10000 2000
 Wire Wire Line
 	1100 4650 800  4650
 Wire Wire Line
@@ -1296,27 +1296,27 @@ Wire Wire Line
 Wire Wire Line
 	1000 2150 1000 2250
 Wire Wire Line
-	3750 1100 3600 1100
+	2450 1300 2300 1300
 Wire Wire Line
-	3600 1000 3750 1000
+	2300 1200 2450 1200
 Wire Wire Line
-	3750 900  3600 900 
+	2450 1100 2300 1100
 Wire Wire Line
-	3600 1200 3750 1200
+	2300 1400 2450 1400
 Wire Wire Line
-	3600 1300 3750 1300
+	2300 1500 2450 1500
 Wire Wire Line
-	5250 1300 5350 1300
+	3950 1500 4050 1500
 Wire Wire Line
-	5350 1300 5350 1400
+	4050 1500 4050 1600
 Wire Wire Line
-	5250 1200 5550 1200
+	3950 1400 4250 1400
 Wire Wire Line
-	5550 1200 5550 1400
+	4250 1400 4250 1600
 Wire Wire Line
-	5400 1000 5250 1000
+	4100 1200 3950 1200
 Wire Wire Line
-	5400 900  5250 900 
+	4100 1100 3950 1100
 Wire Wire Line
 	950  1000 850  1000
 Wire Wire Line
@@ -1414,4 +1414,10 @@ Wire Wire Line
 Connection ~ 3450 6200
 Connection ~ 3650 6200
 Connection ~ 3650 6500
+Text Notes 700  6850 0    60   ~ 0
+TODO: i2c pull-ups?
+Text Notes 2750 2100 0    60   ~ 0
+TODO: Confirm NRF Tx/Rx dir
+Text Notes 4000 200  0    60   ~ 0
+https://www.aliexpress.com/item/Strong-signal-Small-volume-NRF51822-Bluetooth-4-0BLE-module-GT82C02/32827499827.html?
 $EndSCHEMATC
