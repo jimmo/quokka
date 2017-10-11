@@ -1,4 +1,4 @@
-update=Tue 10 Oct 2017 20:58:55 AEDT
+update=Wed 11 Oct 2017 15:43:36 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -27,7 +27,7 @@ NetIExt=net
 version=1
 [eeschema]
 version=1
-LibDir=components/sh1106;/home/jimmo/downloads/opl/SeeedOPL for Kicad-alpha-2017-06
+LibDir=
 [eeschema/libraries]
 LibName1=power
 LibName2=device
@@ -61,6 +61,18 @@ LibName29=opto
 LibName30=atmel
 LibName31=contrib
 LibName32=valves
-LibName33=components/pyboard/pyboard
-LibName34=components/sh1106/sh1106
-LibName35=components/grove/grove
+LibName33=lib/pyboard
+LibName34=lib/sh1106
+LibName35=lib/grove
+LibName36=lib/nrf51822
+LibName37=lib/lsm303c
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
