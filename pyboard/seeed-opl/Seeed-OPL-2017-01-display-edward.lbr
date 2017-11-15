@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
@@ -53,7 +54,7 @@
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -222,6 +223,176 @@
 <wire x1="7.62" y1="-11.43" x2="7.62" y2="1.27" width="0.0635" layer="51"/>
 <wire x1="7.62" y1="1.27" x2="16.51" y2="1.27" width="0.0635" layer="51"/>
 </package>
+<package name="OLED27P-0.6">
+<wire x1="0.635" y1="-9.2" x2="0" y2="-8.565" width="0.127" layer="21" curve="-90"/>
+<wire x1="0" y1="-8.565" x2="0" y2="8.565" width="0.127" layer="51"/>
+<wire x1="0" y1="8.565" x2="0.635" y2="9.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="0.635" y1="9.2" x2="3.665" y2="9.2" width="0.127" layer="21"/>
+<wire x1="3.665" y1="9.2" x2="4.3" y2="8.565" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.3" y1="-8.565" x2="3.665" y2="-9.2" width="0.127" layer="21" curve="-90"/>
+<wire x1="3.665" y1="-9.2" x2="0.635" y2="-9.2" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-8.565" x2="4.3" y2="-6.295" width="0.127" layer="21"/>
+<wire x1="4.3" y1="-6.295" x2="4.935" y2="-5.66" width="0.127" layer="21" curve="-90"/>
+<wire x1="4.3" y1="8.565" x2="4.3" y2="6.295" width="0.127" layer="21"/>
+<wire x1="4.3" y1="6.295" x2="4.935" y2="5.66" width="0.127" layer="21" curve="90"/>
+<wire x1="28.4" y1="13.35" x2="28.4" y2="-13.35" width="0.127" layer="21"/>
+<wire x1="28.4" y1="13.35" x2="10.135" y2="13.35" width="0.127" layer="21"/>
+<wire x1="10.135" y1="13.35" x2="9.5" y2="12.715" width="0.127" layer="21" curve="90"/>
+<wire x1="9.5" y1="12.715" x2="9.5" y2="6.295" width="0.127" layer="21"/>
+<wire x1="9.5" y1="6.295" x2="8.865" y2="5.66" width="0.127" layer="21" curve="-90"/>
+<wire x1="8.865" y1="5.66" x2="4.935" y2="5.66" width="0.127" layer="21"/>
+<wire x1="4.935" y1="-5.66" x2="8.865" y2="-5.66" width="0.127" layer="21"/>
+<wire x1="8.865" y1="-5.66" x2="9.5" y2="-6.295" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.5" y1="-6.295" x2="9.5" y2="-12.715" width="0.127" layer="21"/>
+<wire x1="9.5" y1="-12.715" x2="10.135" y2="-13.35" width="0.127" layer="21" curve="90"/>
+<wire x1="10.135" y1="-13.35" x2="28.4" y2="-13.35" width="0.127" layer="21"/>
+<smd name="1" x="0.6" y="7.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="2" x="0.6" y="7.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="3" x="0.6" y="6.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="4" x="0.6" y="6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="5" x="0.6" y="5.4" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="6" x="0.6" y="4.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="7" x="0.6" y="4.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="8" x="0.6" y="3.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="9" x="0.6" y="3" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="10" x="0.6" y="2.4" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="11" x="0.6" y="1.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="12" x="0.6" y="1.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="13" x="0.6" y="0.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="14" x="0.6" y="0" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="15" x="0.6" y="-0.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="16" x="0.6" y="-1.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="17" x="0.6" y="-1.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="18" x="0.6" y="-2.4" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="19" x="0.6" y="-3" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="20" x="0.6" y="-3.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="21" x="0.6" y="-4.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="22" x="0.6" y="-4.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="23" x="0.6" y="-5.4" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="24" x="0.6" y="-6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="25" x="0.6" y="-6.6" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="26" x="0.6" y="-7.2" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<smd name="27" x="0.6" y="-7.8" dx="2.5" dy="0.35" layer="1" roundness="50"/>
+<text x="-1.27" y="-1.905" size="0.889" layer="25" ratio="11" rot="R90">&gt;name</text>
+<text x="3.175" y="-1.905" size="0.889" layer="27" ratio="11" rot="R90">&gt;value</text>
+<text x="-1.27" y="6.985" size="0.889" layer="21" ratio="11" rot="R90">1</text>
+<hole x="3.4" y="8.3" drill="0.889"/>
+<hole x="3.4" y="-8.3" drill="0.889"/>
+<text x="-1.27" y="-7.62" size="0.889" layer="21" ratio="11" rot="R90">27</text>
+<wire x1="0" y1="8.6" x2="0" y2="8.1" width="0.127" layer="21"/>
+<wire x1="0" y1="-8.6" x2="0" y2="-8.2" width="0.127" layer="21"/>
+</package>
+<package name="OLED27P-0.6-BEND">
+<wire x1="-13.35" y1="18.875" x2="13.35" y2="18.875" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="18.875" x2="-13.35" y2="0.61" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="0.61" x2="-12.715" y2="-0.025" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.715" y1="-0.025" x2="-6.295" y2="-0.025" width="0.127" layer="21"/>
+<wire x1="-6.295" y1="-0.025" x2="-5.66" y2="-0.66" width="0.127" layer="21" curve="-90"/>
+<wire x1="5.66" y1="-0.66" x2="6.295" y2="-0.025" width="0.127" layer="21" curve="-90"/>
+<wire x1="6.295" y1="-0.025" x2="12.715" y2="-0.025" width="0.127" layer="21"/>
+<wire x1="12.715" y1="-0.025" x2="13.35" y2="0.61" width="0.127" layer="21" curve="90"/>
+<wire x1="13.35" y1="0.61" x2="13.35" y2="18.875" width="0.127" layer="21"/>
+<wire x1="-5.6642" y1="-0.635" x2="5.6642" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="5.6642" y1="-0.635" x2="5.6642" y2="1.2446" width="0.127" layer="21"/>
+<wire x1="-9.2" y1="5.588" x2="-8.565" y2="6.223" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8.565" y1="6.223" x2="8.565" y2="6.223" width="0.127" layer="51"/>
+<wire x1="8.565" y1="6.223" x2="9.2" y2="5.588" width="0.127" layer="21" curve="-90"/>
+<wire x1="9.2" y1="5.588" x2="9.2" y2="2.558" width="0.127" layer="21"/>
+<wire x1="9.2" y1="2.558" x2="8.565" y2="1.923" width="0.127" layer="21" curve="-90"/>
+<wire x1="-8.565" y1="1.923" x2="-9.2" y2="2.558" width="0.127" layer="21" curve="-90"/>
+<wire x1="-9.2" y1="2.558" x2="-9.2" y2="5.588" width="0.127" layer="21"/>
+<wire x1="-8.565" y1="1.923" x2="-6.295" y2="1.923" width="0.127" layer="21"/>
+<wire x1="-6.295" y1="1.923" x2="-5.66" y2="1.288" width="0.127" layer="21" curve="-90"/>
+<wire x1="8.565" y1="1.923" x2="6.295" y2="1.923" width="0.127" layer="21"/>
+<wire x1="6.295" y1="1.923" x2="5.66" y2="1.288" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.6642" y1="1.2446" x2="-5.6642" y2="-0.635" width="0.127" layer="21"/>
+<smd name="1" x="-7.8051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="2" x="-7.2051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="3" x="-6.6051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="4" x="-6.0051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="5" x="-5.4051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="6" x="-4.8051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="7" x="-4.2051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="8" x="-3.6051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="9" x="-3.0051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="10" x="-2.4051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="11" x="-1.8051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="12" x="-1.2051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="13" x="-0.6051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="14" x="-0.0051" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="15" x="0.5949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="16" x="1.1949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="17" x="1.7949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="18" x="2.3949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="19" x="2.9949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="20" x="3.5949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="21" x="4.1949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="22" x="4.7949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="23" x="5.3949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="24" x="5.9949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="25" x="6.5949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="26" x="7.1949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<smd name="27" x="7.7949" y="5.6242" dx="2.5" dy="0.35" layer="1" roundness="50" rot="R90"/>
+<text x="-8.255" y="9.525" size="1.6764" layer="51" ratio="15">OLED_128X64</text>
+<text x="-2.54" y="19.685" size="0.889" layer="25" ratio="11">&gt;name</text>
+<text x="-2.54" y="0.635" size="0.889" layer="27" ratio="11">&gt;value</text>
+<text x="-8.255" y="7.62" size="0.889" layer="21" ratio="11">1</text>
+<text x="7.62" y="7.62" size="0.889" layer="21" ratio="11">27</text>
+<wire x1="-8.6" y1="6.2" x2="-8.1" y2="6.2" width="0.127" layer="21"/>
+<wire x1="8.1" y1="6.2" x2="8.7" y2="6.2" width="0.127" layer="21"/>
+</package>
+<package name="OLED27P-0.6-DOWN">
+<wire x1="9.2" y1="-3.175" x2="8.565" y2="-2.54" width="0.127" layer="22" curve="90"/>
+<wire x1="8.565" y1="-2.54" x2="-8.565" y2="-2.54" width="0.127" layer="22"/>
+<wire x1="-8.565" y1="-2.54" x2="-9.2" y2="-3.175" width="0.127" layer="22" curve="90"/>
+<wire x1="-9.2" y1="-3.175" x2="-9.2" y2="-5.697" width="0.127" layer="22"/>
+<wire x1="-9.2" y1="-5.697" x2="-8.565" y2="-6.332" width="0.127" layer="22" curve="90"/>
+<wire x1="8.565" y1="-6.332" x2="9.2" y2="-5.697" width="0.127" layer="22" curve="90"/>
+<wire x1="9.2" y1="-5.697" x2="9.2" y2="-3.175" width="0.127" layer="22"/>
+<wire x1="8.565" y1="-6.332" x2="6.295" y2="-6.332" width="0.127" layer="22"/>
+<wire x1="6.295" y1="-6.332" x2="5.66" y2="-6.967" width="0.127" layer="22" curve="90"/>
+<wire x1="-8.565" y1="-6.332" x2="-6.295" y2="-6.332" width="0.127" layer="22"/>
+<wire x1="-6.295" y1="-6.332" x2="-5.66" y2="-6.967" width="0.127" layer="22" curve="-90"/>
+<wire x1="-13.35" y1="11.89" x2="13.35" y2="11.89" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="11.89" x2="-13.35" y2="-6.375" width="0.127" layer="21"/>
+<wire x1="-13.35" y1="-6.375" x2="-12.715" y2="-7.01" width="0.127" layer="21" curve="90"/>
+<wire x1="-12.715" y1="-7.01" x2="-6.295" y2="-7.01" width="0.127" layer="21"/>
+<wire x1="6.295" y1="-7.01" x2="12.715" y2="-7.01" width="0.127" layer="21"/>
+<wire x1="12.715" y1="-7.01" x2="13.35" y2="-6.375" width="0.127" layer="21" curve="90"/>
+<wire x1="13.35" y1="-6.375" x2="13.35" y2="11.89" width="0.127" layer="21"/>
+<smd name="1" x="-7.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="2" x="-7.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="3" x="-6.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="4" x="-6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="5" x="-5.4" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="6" x="-4.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="7" x="-4.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="8" x="-3.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="9" x="-3" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="10" x="-2.4" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="11" x="-1.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="12" x="-1.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="13" x="-0.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="14" x="0" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="15" x="0.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="16" x="1.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="17" x="1.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="18" x="2.4" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="19" x="3" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="20" x="3.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="21" x="4.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="22" x="4.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="23" x="5.4" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="24" x="6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="25" x="6.6" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="26" x="7.2" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<smd name="27" x="7.8" y="-3.14" dx="2.5" dy="0.35" layer="16" roundness="50" rot="R270"/>
+<text x="-4.445" y="-5.715" size="0.889" layer="21" ratio="11">OLED_128X64</text>
+<text x="-2.54" y="12.7" size="0.889" layer="25" ratio="11">&gt;name</text>
+<text x="-2.54" y="-1.27" size="0.889" layer="27" ratio="11">&gt;value</text>
+<text x="-7.62" y="-1.27" size="0.889" layer="22" ratio="11" rot="MR0">1</text>
+<text x="8.255" y="-1.27" size="0.889" layer="22" ratio="11" rot="MR0">27</text>
+</package>
 </packages>
 <symbols>
 <symbol name="QG-OLED-DISPLAY-27P">
@@ -296,7 +467,7 @@
 <connect gate="G$1" pin="D5" pad="23"/>
 <connect gate="G$1" pin="D6" pad="24"/>
 <connect gate="G$1" pin="D7" pad="25"/>
-<connect gate="G$1" pin="DC" pad="12"/>
+<connect gate="G$1" pin="DC" pad="13"/>
 <connect gate="G$1" pin="E/RD" pad="15"/>
 <connect gate="G$1" pin="IREF" pad="26"/>
 <connect gate="G$1" pin="N" pad="27"/>
@@ -306,7 +477,7 @@
 <connect gate="G$1" pin="P5" pad="5"/>
 <connect gate="G$1" pin="P6" pad="6"/>
 <connect gate="G$1" pin="P7" pad="7"/>
-<connect gate="G$1" pin="RES" pad="13"/>
+<connect gate="G$1" pin="RES" pad="12"/>
 <connect gate="G$1" pin="VCC" pad="17"/>
 <connect gate="G$1" pin="VCOMH" pad="16"/>
 <connect gate="G$1" pin="VDD" pad="8"/>
@@ -318,6 +489,108 @@
 <attribute name="MPN" value="LY190-128064" constant="no"/>
 <attribute name="VALUE" value="LY190-128064" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="BEND" package="OLED27P-0.6-BEND">
+<connects>
+<connect gate="G$1" pin="BS1" pad="9"/>
+<connect gate="G$1" pin="BS2" pad="10"/>
+<connect gate="G$1" pin="CS" pad="11"/>
+<connect gate="G$1" pin="D0" pad="18"/>
+<connect gate="G$1" pin="D1" pad="19"/>
+<connect gate="G$1" pin="D2" pad="20"/>
+<connect gate="G$1" pin="D3" pad="21"/>
+<connect gate="G$1" pin="D4" pad="22"/>
+<connect gate="G$1" pin="D5" pad="23"/>
+<connect gate="G$1" pin="D6" pad="24"/>
+<connect gate="G$1" pin="D7" pad="25"/>
+<connect gate="G$1" pin="DC" pad="13"/>
+<connect gate="G$1" pin="E/RD" pad="15"/>
+<connect gate="G$1" pin="IREF" pad="26"/>
+<connect gate="G$1" pin="N" pad="27"/>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P3" pad="3"/>
+<connect gate="G$1" pin="P4" pad="4"/>
+<connect gate="G$1" pin="P5" pad="5"/>
+<connect gate="G$1" pin="P6" pad="6"/>
+<connect gate="G$1" pin="P7" pad="7"/>
+<connect gate="G$1" pin="RES" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="G$1" pin="VCOMH" pad="16"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+<connect gate="G$1" pin="WR" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DOWN" package="OLED27P-0.6-DOWN">
+<connects>
+<connect gate="G$1" pin="BS1" pad="9"/>
+<connect gate="G$1" pin="BS2" pad="10"/>
+<connect gate="G$1" pin="CS" pad="11"/>
+<connect gate="G$1" pin="D0" pad="18"/>
+<connect gate="G$1" pin="D1" pad="19"/>
+<connect gate="G$1" pin="D2" pad="20"/>
+<connect gate="G$1" pin="D3" pad="21"/>
+<connect gate="G$1" pin="D4" pad="22"/>
+<connect gate="G$1" pin="D5" pad="23"/>
+<connect gate="G$1" pin="D6" pad="24"/>
+<connect gate="G$1" pin="D7" pad="25"/>
+<connect gate="G$1" pin="DC" pad="13"/>
+<connect gate="G$1" pin="E/RD" pad="15"/>
+<connect gate="G$1" pin="IREF" pad="26"/>
+<connect gate="G$1" pin="N" pad="27"/>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P3" pad="3"/>
+<connect gate="G$1" pin="P4" pad="4"/>
+<connect gate="G$1" pin="P5" pad="5"/>
+<connect gate="G$1" pin="P6" pad="6"/>
+<connect gate="G$1" pin="P7" pad="7"/>
+<connect gate="G$1" pin="RES" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="G$1" pin="VCOMH" pad="16"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+<connect gate="G$1" pin="WR" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="OLD" package="OLED27P-0.6">
+<connects>
+<connect gate="G$1" pin="BS1" pad="9"/>
+<connect gate="G$1" pin="BS2" pad="10"/>
+<connect gate="G$1" pin="CS" pad="11"/>
+<connect gate="G$1" pin="D0" pad="18"/>
+<connect gate="G$1" pin="D1" pad="19"/>
+<connect gate="G$1" pin="D2" pad="20"/>
+<connect gate="G$1" pin="D3" pad="21"/>
+<connect gate="G$1" pin="D4" pad="22"/>
+<connect gate="G$1" pin="D5" pad="23"/>
+<connect gate="G$1" pin="D6" pad="24"/>
+<connect gate="G$1" pin="D7" pad="25"/>
+<connect gate="G$1" pin="DC" pad="13"/>
+<connect gate="G$1" pin="E/RD" pad="15"/>
+<connect gate="G$1" pin="IREF" pad="26"/>
+<connect gate="G$1" pin="N" pad="27"/>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P3" pad="3"/>
+<connect gate="G$1" pin="P4" pad="4"/>
+<connect gate="G$1" pin="P5" pad="5"/>
+<connect gate="G$1" pin="P6" pad="6"/>
+<connect gate="G$1" pin="P7" pad="7"/>
+<connect gate="G$1" pin="RES" pad="12"/>
+<connect gate="G$1" pin="VCC" pad="17"/>
+<connect gate="G$1" pin="VCOMH" pad="16"/>
+<connect gate="G$1" pin="VDD" pad="8"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+<connect gate="G$1" pin="WR" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
