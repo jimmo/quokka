@@ -26,4 +26,5 @@
   (lib (name Seeed-Transistor)(type Eagle)(uri "$(KIPRJMOD)/seeed-opl/Seeed-Transistor.lbr")(options "")(descr ""))
   (lib (name pyboard)(type KiCad)(uri "$(KIPRJMOD)/lib/pyboard.pretty")(options "")(descr ""))
   (lib (name microbit)(type KiCad)(uri "$(KIPRJMOD)/lib/microbit.pretty")(options "")(descr ""))
+  (lib (name nrf51822)(type KiCad)(uri "$(KIPRJMOD)/lib/nrf51822.pretty")(options "")(descr ""))
 )
