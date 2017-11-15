@@ -1,4 +1,4 @@
-update=Wed 15 Nov 2017 14:42:36 AEDT
+update=Wed 15 Nov 2017 15:40:53 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -79,3 +79,4 @@ LibName37=lib/lsm303c
 LibName38=lib/seeed-opl-sensor
 LibName39=lib/seeed-opl-display
 LibName40=lib/microbit
+LibName41=lib/seeed-opl-ic
