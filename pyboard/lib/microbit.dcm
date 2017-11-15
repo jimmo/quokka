@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP microbit_edge
+D micro:bit edge connector
+K connector
+F ~
+$ENDCMP
+#
+#End Doc Library

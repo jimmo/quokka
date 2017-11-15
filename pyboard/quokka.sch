@@ -38,6 +38,7 @@ LIBS:nrf51822
 LIBS:lsm303c
 LIBS:seeed-opl-sensor
 LIBS:seeed-opl-display
+LIBS:microbit
 LIBS:quokka-cache
 EELAYER 25 0
 EELAYER END
@@ -1442,6 +1443,17 @@ F 1 "QG-2864KSWEG02" H 2400 3550 45  0001 C CNN
 F 2 "Seeed-OPL-2017-01-display-edward:QG-2864KSWEG02" H 2430 3700 20  0001 C CNN
 F 3 "" H 2400 3550 60  0001 C CNN
 	1    2400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L microbit_edge J?
+U 1 1 5A0BBB6F
+P 5250 2150
+F 0 "J?" H 5250 3500 50  0000 C CNN
+F 1 "microbit_edge" H 5250 800 50  0000 C CNN
+F 2 "" H 5100 2150 50  0001 C CNN
+F 3 "" H 5100 2150 50  0001 C CNN
+	1    5250 2150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC

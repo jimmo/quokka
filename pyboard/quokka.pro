@@ -1,4 +1,4 @@
-update=Wed 15 Nov 2017 05:15:42 AEDT
+update=Wed 15 Nov 2017 14:42:36 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -78,3 +78,4 @@ LibName36=lib/nrf51822
 LibName37=lib/lsm303c
 LibName38=lib/seeed-opl-sensor
 LibName39=lib/seeed-opl-display
+LibName40=lib/microbit
