@@ -1,11 +1,5 @@
 EESchema-DOCLIB  Version 2.0
 #
-$CMP Conn_01x04
-D Generic connector, single row, 01x04
-K connector
-F ~
-$ENDCMP
-#
 $CMP Grove_Analog
 D Generic connector, single row, 01x04
 K connector
@@ -19,6 +13,12 @@ F ~
 $ENDCMP
 #
 $CMP Grove_I2C
+D Generic connector, single row, 01x04
+K connector
+F ~
+$ENDCMP
+#
+$CMP Grove_SPI
 D Generic connector, single row, 01x04
 K connector
 F ~
