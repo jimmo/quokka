@@ -1,4 +1,4 @@
-update=Wed 15 Nov 2017 15:40:53 AEDT
+update=Thu 16 Nov 2017 13:19:39 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -80,3 +70,13 @@ LibName38=lib/seeed-opl-sensor
 LibName39=lib/seeed-opl-display
 LibName40=lib/microbit
 LibName41=lib/seeed-opl-ic
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
