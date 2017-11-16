@@ -1,4 +1,4 @@
-update=Thu 16 Nov 2017 13:19:39 AEDT
+update=Thu 16 Nov 2017 22:22:54 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -66,17 +76,9 @@ LibName34=lib/sh1106
 LibName35=lib/grove
 LibName36=lib/nrf51822
 LibName37=lib/lsm303c
-LibName38=lib/seeed-opl-sensor
-LibName39=lib/seeed-opl-display
-LibName40=lib/microbit
+LibName38=lib/microbit
+LibName39=lib/seeed-opl-sensor
+LibName40=lib/seeed-opl-display
 LibName41=lib/seeed-opl-ic
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName42=lib/seeed-opl-led
+LibName43=lib/seeed-opl-diode
