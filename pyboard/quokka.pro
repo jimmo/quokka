@@ -1,4 +1,4 @@
-update=Sun 19 Nov 2017 00:18:49 AEDT
+update=Sun 19 Nov 2017 00:49:36 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,16 +25,6 @@ version=1
 NetIExt=net
 [general]
 version=1
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -83,3 +73,13 @@ LibName41=lib/seeed-opl-ic
 LibName42=lib/seeed-opl-led
 LibName43=lib/seeed-opl-diode
 LibName44=lib/symbol
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
