@@ -1,4 +1,4 @@
-update=Thu 16 Nov 2017 22:22:54 AEDT
+update=Sun 19 Nov 2017 00:18:49 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -82,3 +82,4 @@ LibName40=lib/seeed-opl-display
 LibName41=lib/seeed-opl-ic
 LibName42=lib/seeed-opl-led
 LibName43=lib/seeed-opl-diode
+LibName44=lib/symbol

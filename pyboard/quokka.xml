@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="D">
+  <design>
+    <source>/home/jimmo/src/github.com/jimmo/quokka/pyboard/quokka.sch</source>
+    <date>Sat 18 Nov 2017 23:53:44 AEDT</date>
+    <tool>Eeschema 4.0.7</tool>
+    <sheet number="1" name="/" tstamps="/">
+      <title_block>
+        <title/>
+        <company/>
+        <rev/>
+        <date/>
+        <source>quokka.sch</source>
+        <comment number="1" value=""/>
+        <comment number="2" value=""/>
+        <comment number="3" value=""/>
+        <comment number="4" value=""/>
+      </title_block>
+    </sheet>
+  </design>
+  <components>
+    <comp ref="U4">
+      <value>PyBoard</value>
+      <footprint>pyboard:pyboard</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="pyboard" part="PyBoard"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC8B10</tstamp>
+    </comp>
+    <comp ref="SW3">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC8C23</tstamp>
+    </comp>
+    <comp ref="R12">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC8CB5</tstamp>
+    </comp>
+    <comp ref="C12">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC8D56</tstamp>
+    </comp>
+    <comp ref="SW1">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC91B3</tstamp>
+    </comp>
+    <comp ref="R10">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC91BF</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC91C5</tstamp>
+    </comp>
+    <comp ref="SW4">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC934B</tstamp>
+    </comp>
+    <comp ref="R13">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC9357</tstamp>
+    </comp>
+    <comp ref="C13">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC935D</tstamp>
+    </comp>
+    <comp ref="SW2">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC9889</tstamp>
+    </comp>
+    <comp ref="R11">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC9895</tstamp>
+    </comp>
+    <comp ref="C11">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC989B</tstamp>
+    </comp>
+    <comp ref="J1">
+      <value>Conn_01x02</value>
+      <libsource lib="conn" part="Conn_01x02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DC9CFA</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>560</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DCBC6E</tstamp>
+    </comp>
+    <comp ref="R7">
+      <value>560</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DCC5D4</tstamp>
+    </comp>
+    <comp ref="R8">
+      <value>560</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DCC6F0</tstamp>
+    </comp>
+    <comp ref="R9">
+      <value>220</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DCC705</tstamp>
+    </comp>
+    <comp ref="J2">
+      <value>Grove_I2C</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_I2C"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD5320</tstamp>
+    </comp>
+    <comp ref="J3">
+      <value>Grove_Digital</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_Digital"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD539B</tstamp>
+    </comp>
+    <comp ref="J4">
+      <value>Grove_Digital</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_Digital"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD5463</tstamp>
+    </comp>
+    <comp ref="J6">
+      <value>Grove_Analog</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_Analog"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD566B</tstamp>
+    </comp>
+    <comp ref="J5">
+      <value>Grove_Analog</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_Analog"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>59DD56CA</tstamp>
+    </comp>
+    <comp ref="U2">
+      <value>QG-2864KSWEG02</value>
+      <footprint>Seeed-OPL-2017-01-display-edward:OLED27P-0.6-BEND</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">LY190-128064</field>
+        <field name="SPR">-</field>
+        <field name="SPN">308020000</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-display" part="QG-2864KSWEG02"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BAB91</tstamp>
+    </comp>
+    <comp ref="J9">
+      <value>microbit_edge</value>
+      <footprint>microbit:microbit_edge</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="microbit" part="microbit_edge"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BBB6F</tstamp>
+    </comp>
+    <comp ref="U6">
+      <value>PMIC-AIC1896GG_SOT23-6_</value>
+      <footprint>Seeed-IC:SOT-23-6</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">AIC1896CG</field>
+        <field name="SPR">-</field>
+        <field name="SPN">310030104</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-ic" part="PMIC-AIC1896GG_SOT23-6_"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BD9E0</tstamp>
+    </comp>
+    <comp ref="C8">
+      <value>33nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BE3C5</tstamp>
+    </comp>
+    <comp ref="C7">
+      <value>10uF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805ZKY5V6BB106</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010158</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BF0F4</tstamp>
+    </comp>
+    <comp ref="R5">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0BF4D1</tstamp>
+    </comp>
+    <comp ref="L1">
+      <value>10uH</value>
+      <footprint>Seeed-Inductor:SMD-2P-L6.0XW6.0XH3.0MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CSAB0630-100M</field>
+        <field name="SPR">-</field>
+        <field name="SPN">303010016</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="L_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C005B</tstamp>
+    </comp>
+    <comp ref="D5">
+      <value>SS0520</value>
+      <footprint>Seeed-Diode:SOD-123</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">SS0520-7-F</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304020032</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="D_Schottky_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C049B</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C0E71</tstamp>
+    </comp>
+    <comp ref="R14">
+      <value>11k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C142A</tstamp>
+    </comp>
+    <comp ref="R15">
+      <value>1.5k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C14EB</tstamp>
+    </comp>
+    <comp ref="C14">
+      <value>10uF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805ZKY5V6BB106</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010158</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C1E43</tstamp>
+    </comp>
+    <comp ref="C15">
+      <value>16V_10uF_P</value>
+      <footprint>Seeed-Capacitor:AVX-A</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">TAJA106K016RNJ</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302020002</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="CP_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C1F87</tstamp>
+    </comp>
+    <comp ref="J8">
+      <value>Conn_01x04</value>
+      <libsource lib="conn" part="Conn_01x04"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C3E50</tstamp>
+    </comp>
+    <comp ref="R4">
+      <value>910k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C5278</tstamp>
+    </comp>
+    <comp ref="C6">
+      <value>16V_4.7uF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C624D</tstamp>
+    </comp>
+    <comp ref="C4">
+      <value>16V_4.7uF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C6322</tstamp>
+    </comp>
+    <comp ref="C5">
+      <value>4.7uF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0C6636</tstamp>
+    </comp>
+    <comp ref="R3">
+      <value>10k</value>
+      <footprint>Seeed-Resistor:R0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="R_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0CBB65</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>NRF51822_SKB360</value>
+      <footprint>nrf51822:nrf51822_skb360</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="nrf51822" part="NRF51822_SKB360"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0CD976</tstamp>
+    </comp>
+    <comp ref="J7">
+      <value>Grove_SPI</value>
+      <footprint>Seeed-Connector:HW4-SMD-2.0</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="grove" part="Grove_SPI"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D01FF</tstamp>
+    </comp>
+    <comp ref="D2">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D7C53</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D7D0B</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D7E4B</tstamp>
+    </comp>
+    <comp ref="D1">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D7FC5</tstamp>
+    </comp>
+    <comp ref="D7">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D87BD</tstamp>
+    </comp>
+    <comp ref="D8">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D87C3</tstamp>
+    </comp>
+    <comp ref="D9">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D87C9</tstamp>
+    </comp>
+    <comp ref="D6">
+      <value>SMD-RGB-LED-4P'WS2812B'</value>
+      <footprint>Seeed-Diode:LED4-SMD-5050</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">WS2812B</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304990003</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D87CF</tstamp>
+    </comp>
+    <comp ref="D10">
+      <value>SMD-LED-CLEAR-RED_0805_</value>
+      <footprint>Seeed-LED:LED-0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">17-215SURC/S530-A2/TR8</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304090046</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-led" part="SMD-LED-CLEAR-RED_0805_"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DA953</tstamp>
+    </comp>
+    <comp ref="D13">
+      <value>SMD-LED-CLEAR-BLUE_0805_</value>
+      <footprint>Seeed-LED:LED-0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">EL-17-215/BHC-AN1P2/3T</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304090061</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-led" part="SMD-LED-CLEAR-BLUE_0805_"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DAA1E</tstamp>
+    </comp>
+    <comp ref="D12">
+      <value>SMD-LED-CLEAR-YELLOW_0805_</value>
+      <footprint>Seeed-LED:LED-0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">17-215UYC/S530-A3/TR8</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304090039</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-led" part="SMD-LED-CLEAR-YELLOW_0805_"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DAAC9</tstamp>
+    </comp>
+    <comp ref="D11">
+      <value>SMD-LED-CLEAR-GREEN_0805_</value>
+      <footprint>Seeed-LED:LED-0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">17-215SYGC/S530-E2/TR8</field>
+        <field name="SPR">-</field>
+        <field name="SPN">304090057</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-led" part="SMD-LED-CLEAR-GREEN_0805_"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DAB74</tstamp>
+    </comp>
+    <comp ref="C3">
+      <value>10nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">-</field>
+        <field name="SPR">-</field>
+        <field name="SPN">-</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0D9EA3</tstamp>
+    </comp>
+    <comp ref="C2">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DA883</tstamp>
+    </comp>
+    <comp ref="C1">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0DAEE0</tstamp>
+    </comp>
+    <comp ref="U5">
+      <value>MPU-9250</value>
+      <footprint>Seeed-OPL-2017-01-Sensor-camilo:MPU-9250</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">MPU-9250</field>
+        <field name="SPR">-</field>
+        <field name="SPN">314990005</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="seeed-opl-sensor" part="MPU-9250"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A0B3E12</tstamp>
+    </comp>
+    <comp ref="SW5">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-5.2X5.2X1.5MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1031AB</tstamp>
+    </comp>
+    <comp ref="SW6">
+      <value>SW_Push_Dual</value>
+      <footprint>Seeed-Switch:SW4-SMD-5.2X5.2X1.5MM</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">DTSM-62K-S-V-T/R(SN431)</field>
+        <field name="SPR">-</field>
+        <field name="SPN">311020004</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="switches" part="SW_Push_Dual"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1031D8</tstamp>
+    </comp>
+    <comp ref="C16">
+      <value>100nF</value>
+      <footprint>Seeed-Capacitor:C0805</footprint>
+      <fields>
+        <field name="MFR">-</field>
+        <field name="MPN">CC0805KRX7R9BB104</field>
+        <field name="SPR">-</field>
+        <field name="SPN">302010165</field>
+        <field name="SPURL">-</field>
+      </fields>
+      <libsource lib="device" part="C_Small"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5A1031F4</tstamp>
+    </comp>
+  </components>
+  <libparts>
+    <libpart lib="device" part="CP_Small">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="C_Small">
+      <description>Unpolarized capacitor</description>
+      <footprints>
+        <fp>C_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">C_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x02">
+      <description>Generic connector, single row, 01x02</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="conn" part="Conn_01x04">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Conn_01x04</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_1" type="passive"/>
+        <pin num="2" name="Pin_2" type="passive"/>
+        <pin num="3" name="Pin_3" type="passive"/>
+        <pin num="4" name="Pin_4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="D_Schottky_Small">
+      <description>Schottky diode, small symbol</description>
+      <footprints>
+        <fp>TO-???*</fp>
+        <fp>*SingleDiode</fp>
+        <fp>*_Diode_*</fp>
+        <fp>*SingleDiode*</fp>
+        <fp>D_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">D_Schottky_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="grove" part="Grove_Analog">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Grove_Analog</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A1" type="BiDi"/>
+        <pin num="2" name="A2" type="BiDi"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="grove" part="Grove_Digital">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Grove_Digital</field>
+      </fields>
+      <pins>
+        <pin num="1" name="D1" type="BiDi"/>
+        <pin num="2" name="D2" type="BiDi"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="grove" part="Grove_I2C">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Grove_I2C</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCL" type="BiDi"/>
+        <pin num="2" name="SDA" type="BiDi"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="grove" part="Grove_SPI">
+      <description>Generic connector, single row, 01x04</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Connector*:*_??x*mm*</fp>
+        <fp>Connector*:*1x??x*mm*</fp>
+        <fp>Pin?Header?Straight?1X*</fp>
+        <fp>Pin?Header?Angled?1X*</fp>
+        <fp>Socket?Strip?Straight?1X*</fp>
+        <fp>Socket?Strip?Angled?1X*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">Grove_SPI</field>
+      </fields>
+      <pins>
+        <pin num="1" name="SCK" type="BiDi"/>
+        <pin num="2" name="MOSI" type="BiDi"/>
+        <pin num="3" name="VCC" type="power_in"/>
+        <pin num="4" name="GND" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="L_Small">
+      <description>Inductor, small symbol</description>
+      <footprints>
+        <fp>Choke_*</fp>
+        <fp>*Coil*</fp>
+        <fp>Inductor_*</fp>
+        <fp>L_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">L</field>
+        <field name="Value">L_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-sensor" part="MPU-9250">
+      <footprints>
+        <fp>*MPU-9250*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">MPU-9250</field>
+        <field name="Footprint">Seeed-OPL-2017-01-Sensor-camilo_MPU-9250</field>
+      </fields>
+      <pins>
+        <pin num="1" name="RESV" type="BiDi"/>
+        <pin num="2" name="NC" type="BiDi"/>
+        <pin num="3" name="NC" type="BiDi"/>
+        <pin num="4" name="NC" type="BiDi"/>
+        <pin num="5" name="NC" type="BiDi"/>
+        <pin num="6" name="NC" type="BiDi"/>
+        <pin num="7" name="AUX_CL" type="BiDi"/>
+        <pin num="8" name="VDDIO" type="BiDi"/>
+        <pin num="9" name="AD0/SDO" type="BiDi"/>
+        <pin num="10" name="REGOUT" type="BiDi"/>
+        <pin num="11" name="FSYNC" type="BiDi"/>
+        <pin num="12" name="INT" type="BiDi"/>
+        <pin num="13" name="VDD" type="BiDi"/>
+        <pin num="14" name="NC" type="BiDi"/>
+        <pin num="15" name="NC" type="BiDi"/>
+        <pin num="16" name="NC" type="BiDi"/>
+        <pin num="17" name="NC" type="BiDi"/>
+        <pin num="18" name="GND" type="BiDi"/>
+        <pin num="19" name="RESV" type="BiDi"/>
+        <pin num="20" name="RESV" type="BiDi"/>
+        <pin num="21" name="AUX_DA" type="BiDi"/>
+        <pin num="22" name="NCS" type="BiDi"/>
+        <pin num="23" name="SCL/SCLK" type="BiDi"/>
+        <pin num="24" name="SDA/SDI" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="nrf51822" part="NRF51822_SKB360">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">NRF51822_SKB360</field>
+      </fields>
+      <pins>
+        <pin num="1" name="GND" type="input"/>
+        <pin num="2" name="VCC" type="input"/>
+        <pin num="3" name="P0_21" type="input"/>
+        <pin num="4" name="P0_22" type="input"/>
+        <pin num="5" name="P0_23" type="input"/>
+        <pin num="6" name="P0_24" type="input"/>
+        <pin num="7" name="P0_25" type="input"/>
+        <pin num="8" name="P0_28" type="input"/>
+        <pin num="9" name="P0_29" type="input"/>
+        <pin num="10" name="GND" type="input"/>
+        <pin num="11" name="P0_30" type="input"/>
+        <pin num="12" name="P0_1" type="input"/>
+        <pin num="13" name="P0_2" type="input"/>
+        <pin num="14" name="P0_3" type="input"/>
+        <pin num="15" name="P0_4" type="input"/>
+        <pin num="16" name="P0_08/TX" type="input"/>
+        <pin num="17" name="P0_09/RX" type="input"/>
+        <pin num="18" name="P0_10" type="input"/>
+        <pin num="19" name="P0_11" type="input"/>
+        <pin num="20" name="P0_12" type="input"/>
+        <pin num="21" name="P0_13" type="input"/>
+        <pin num="22" name="P0_14" type="input"/>
+        <pin num="23" name="P0_17" type="input"/>
+        <pin num="24" name="SWDIO/~RST" type="input"/>
+        <pin num="25" name="SWDCK" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-ic" part="PMIC-AIC1896GG_SOT23-6_">
+      <footprints>
+        <fp>*SOT-23-6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PMIC-AIC1896GG_SOT23-6_</field>
+        <field name="Footprint">Seeed-IC_SOT-23-6</field>
+      </fields>
+      <pins>
+        <pin num="1" name="LX" type="output"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="FB" type="input"/>
+        <pin num="4" name="~SHDN" type="input"/>
+        <pin num="5" name="SS" type="input"/>
+        <pin num="6" name="IN" type="input"/>
+      </pins>
+    </libpart>
+    <libpart lib="pyboard" part="PyBoard">
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">PyBoard</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Y1" type="BiDi"/>
+        <pin num="2" name="Y2" type="BiDi"/>
+        <pin num="3" name="Y3" type="BiDi"/>
+        <pin num="4" name="Y4" type="BiDi"/>
+        <pin num="5" name="Y5" type="BiDi"/>
+        <pin num="6" name="Y6" type="BiDi"/>
+        <pin num="7" name="Y7" type="BiDi"/>
+        <pin num="8" name="Y8" type="BiDi"/>
+        <pin num="9" name="X9" type="BiDi"/>
+        <pin num="10" name="X10" type="BiDi"/>
+        <pin num="11" name="X11" type="BiDi"/>
+        <pin num="12" name="X12" type="BiDi"/>
+        <pin num="13" name="~RST" type="BiDi"/>
+        <pin num="14" name="GND" type="power_in"/>
+        <pin num="15" name="3V3" type="power_in"/>
+        <pin num="16" name="VIN" type="power_in"/>
+        <pin num="17" name="BOOT0" type="BiDi"/>
+        <pin num="18" name="P2" type="BiDi"/>
+        <pin num="19" name="P3" type="BiDi"/>
+        <pin num="20" name="P4" type="BiDi"/>
+        <pin num="21" name="P5" type="BiDi"/>
+        <pin num="22" name="VBAT" type="output"/>
+        <pin num="23" name="VIN" type="power_in"/>
+        <pin num="24" name="GND" type="power_in"/>
+        <pin num="25" name="X17" type="BiDi"/>
+        <pin num="26" name="X18" type="BiDi"/>
+        <pin num="27" name="X19" type="BiDi"/>
+        <pin num="28" name="X20" type="BiDi"/>
+        <pin num="29" name="X21" type="BiDi"/>
+        <pin num="30" name="X22" type="BiDi"/>
+        <pin num="31" name="A3V3" type="power_in"/>
+        <pin num="32" name="AGND" type="power_in"/>
+        <pin num="33" name="GND" type="power_in"/>
+        <pin num="34" name="GND" type="power_in"/>
+        <pin num="35" name="GND" type="power_in"/>
+        <pin num="36" name="GND" type="power_in"/>
+        <pin num="37" name="VIN" type="power_in"/>
+        <pin num="38" name="VIN" type="power_in"/>
+        <pin num="39" name="VIN" type="power_in"/>
+        <pin num="40" name="VIN" type="power_in"/>
+        <pin num="41" name="X1" type="BiDi"/>
+        <pin num="42" name="X2" type="BiDi"/>
+        <pin num="43" name="X3" type="BiDi"/>
+        <pin num="44" name="X4" type="BiDi"/>
+        <pin num="45" name="X5" type="BiDi"/>
+        <pin num="46" name="X6" type="BiDi"/>
+        <pin num="47" name="X7" type="BiDi"/>
+        <pin num="48" name="X8" type="BiDi"/>
+        <pin num="49" name="Y9" type="BiDi"/>
+        <pin num="50" name="Y10" type="BiDi"/>
+        <pin num="51" name="Y11" type="BiDi"/>
+        <pin num="52" name="Y12" type="BiDi"/>
+        <pin num="53" name="~RST" type="BiDi"/>
+        <pin num="54" name="GND" type="power_in"/>
+        <pin num="55" name="3V3" type="power_in"/>
+        <pin num="56" name="VIN" type="power_in"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-display" part="QG-2864KSWEG02">
+      <footprints>
+        <fp>*QG-2864KSWEG02*</fp>
+        <fp>*OLED27P-0.6-BEND*</fp>
+        <fp>*OLED27P-0.6-DOWN*</fp>
+        <fp>*OLED27P-0.6*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">QG-2864KSWEG02</field>
+        <field name="Footprint">Seeed-OPL-2017-01-display-edward_QG-2864KSWEG02</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="BiDi"/>
+        <pin num="2" name="VSS" type="BiDi"/>
+        <pin num="3" name="P3" type="BiDi"/>
+        <pin num="4" name="P4" type="BiDi"/>
+        <pin num="5" name="P5" type="BiDi"/>
+        <pin num="6" name="P6" type="BiDi"/>
+        <pin num="7" name="P7" type="BiDi"/>
+        <pin num="8" name="VDD" type="BiDi"/>
+        <pin num="9" name="BS1" type="BiDi"/>
+        <pin num="10" name="BS2" type="BiDi"/>
+        <pin num="11" name="CS" type="BiDi"/>
+        <pin num="12" name="RES" type="BiDi"/>
+        <pin num="13" name="DC" type="BiDi"/>
+        <pin num="14" name="WR" type="BiDi"/>
+        <pin num="15" name="E/RD" type="BiDi"/>
+        <pin num="16" name="VCOMH" type="BiDi"/>
+        <pin num="17" name="VCC" type="BiDi"/>
+        <pin num="18" name="D0" type="BiDi"/>
+        <pin num="19" name="D1" type="BiDi"/>
+        <pin num="20" name="D2" type="BiDi"/>
+        <pin num="21" name="D3" type="BiDi"/>
+        <pin num="22" name="D4" type="BiDi"/>
+        <pin num="23" name="D5" type="BiDi"/>
+        <pin num="24" name="D6" type="BiDi"/>
+        <pin num="25" name="D7" type="BiDi"/>
+        <pin num="26" name="IREF" type="BiDi"/>
+        <pin num="27" name="N" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="device" part="R_Small">
+      <description>Resistor, small symbol</description>
+      <footprints>
+        <fp>R_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R_Small</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-led" part="SMD-LED-CLEAR-BLUE_0805_">
+      <footprints>
+        <fp>*LED-0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-LED-CLEAR-BLUE_0805_</field>
+        <field name="Footprint">Seeed-LED_LED-0805</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-led" part="SMD-LED-CLEAR-GREEN_0805_">
+      <footprints>
+        <fp>*LED-0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-LED-CLEAR-GREEN_0805_</field>
+        <field name="Footprint">Seeed-LED_LED-0805</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-led" part="SMD-LED-CLEAR-RED_0805_">
+      <footprints>
+        <fp>*LED-0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-LED-CLEAR-RED_0805_</field>
+        <field name="Footprint">Seeed-LED_LED-0805</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-led" part="SMD-LED-CLEAR-YELLOW_0805_">
+      <footprints>
+        <fp>*LED-0805*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-LED-CLEAR-YELLOW_0805_</field>
+        <field name="Footprint">Seeed-LED_LED-0805</field>
+      </fields>
+      <pins>
+        <pin num="+" name="+" type="passive"/>
+        <pin num="-" name="-" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="seeed-opl-diode" part="SMD-RGB-LED-4P'WS2812B'">
+      <footprints>
+        <fp>*LED4-SMD-5050*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">SMD-RGB-LED-4P'WS2812B'</field>
+        <field name="Footprint">Seeed-OPL-2017-01-Diode-james_LED4-SMD-5050</field>
+      </fields>
+      <pins>
+        <pin num="1" name="VDD" type="BiDi"/>
+        <pin num="2" name="DOUT" type="BiDi"/>
+        <pin num="3" name="VSS" type="BiDi"/>
+        <pin num="4" name="DIN" type="BiDi"/>
+      </pins>
+    </libpart>
+    <libpart lib="switches" part="SW_Push_Dual">
+      <description>Push button switch, generic, symbol, four pins</description>
+      <fields>
+        <field name="Reference">SW</field>
+        <field name="Value">SW_Push_Dual</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="microbit" part="microbit_edge">
+      <description>micro:bit edge connector</description>
+      <docs>~</docs>
+      <fields>
+        <field name="Reference">J</field>
+        <field name="Value">microbit_edge</field>
+      </fields>
+      <pins>
+        <pin num="1" name="Pin_0" type="passive"/>
+        <pin num="2" name="Pin_1" type="passive"/>
+        <pin num="3" name="Pin_2" type="passive"/>
+        <pin num="4" name="Pin_3" type="passive"/>
+        <pin num="5" name="Pin_4" type="passive"/>
+        <pin num="6" name="Pin_5" type="passive"/>
+        <pin num="7" name="Pin_6" type="passive"/>
+        <pin num="8" name="Pin_7" type="passive"/>
+        <pin num="9" name="Pin_8" type="passive"/>
+        <pin num="10" name="Pin_9" type="passive"/>
+        <pin num="11" name="Pin_10" type="passive"/>
+        <pin num="12" name="Pin_11" type="passive"/>
+        <pin num="13" name="Pin_12" type="passive"/>
+        <pin num="14" name="Pin_13" type="passive"/>
+        <pin num="15" name="Pin_14" type="passive"/>
+        <pin num="16" name="Pin_15" type="passive"/>
+        <pin num="17" name="Pin_16" type="passive"/>
+        <pin num="18" name="Pin_17" type="passive"/>
+        <pin num="19" name="Pin_18" type="passive"/>
+        <pin num="20" name="Pin_19" type="passive"/>
+        <pin num="21" name="Pin_20" type="passive"/>
+        <pin num="22" name="Pin_21" type="passive"/>
+        <pin num="23" name="Pin_22" type="passive"/>
+        <pin num="24" name="Pin_23" type="passive"/>
+        <pin num="25" name="Pin_24" type="passive"/>
+      </pins>
+    </libpart>
+  </libparts>
+  <libraries>
+    <library logical="conn">
+      <uri>/usr/share/kicad/library/conn.lib</uri>
+    </library>
+    <library logical="device">
+      <uri>/usr/share/kicad/library/device.lib</uri>
+    </library>
+    <library logical="pyboard">
+      <uri>lib/pyboard.lib</uri>
+    </library>
+    <library logical="nrf51822">
+      <uri>lib/nrf51822.lib</uri>
+    </library>
+    <library logical="grove">
+      <uri>lib/grove.lib</uri>
+    </library>
+    <library logical="microbit">
+      <uri>lib/microbit.lib</uri>
+    </library>
+    <library logical="seeed-opl-sensor">
+      <uri>lib/seeed-opl-sensor.lib</uri>
+    </library>
+    <library logical="seeed-opl-display">
+      <uri>lib/seeed-opl-display.lib</uri>
+    </library>
+    <library logical="seeed-opl-ic">
+      <uri>lib/seeed-opl-ic.lib</uri>
+    </library>
+    <library logical="seeed-opl-led">
+      <uri>lib/seeed-opl-led.lib</uri>
+    </library>
+    <library logical="seeed-opl-diode">
+      <uri>lib/seeed-opl-diode.lib</uri>
+    </library>
+    <library logical="switches">
+      <uri>/usr/share/kicad/library/switches.lib</uri>
+    </library>
+  </libraries>
+  <nets>
+    <net code="1" name="SW4">
+      <node ref="U4" pin="29"/>
+      <node ref="C13" pin="1"/>
+      <node ref="R13" pin="2"/>
+      <node ref="SW4" pin="4"/>
+      <node ref="SW4" pin="2"/>
+    </net>
+    <net code="2" name="SDA2">
+      <node ref="U4" pin="50"/>
+    </net>
+    <net code="3" name="SCL2">
+      <node ref="U4" pin="49"/>
+    </net>
+    <net code="4" name="MOSI1">
+      <node ref="U4" pin="48"/>
+    </net>
+    <net code="5" name="MISO1">
+      <node ref="U4" pin="47"/>
+    </net>
+    <net code="6" name="DAC1">
+      <node ref="U4" pin="46"/>
+    </net>
+    <net code="7" name="DAC2">
+      <node ref="U4" pin="45"/>
+    </net>
+    <net code="8" name="SW3">
+      <node ref="SW2" pin="4"/>
+      <node ref="SW2" pin="2"/>
+      <node ref="C11" pin="1"/>
+      <node ref="U4" pin="28"/>
+      <node ref="R11" pin="2"/>
+    </net>
+    <net code="9" name="~SS2">
+      <node ref="U4" pin="5"/>
+    </net>
+    <net code="10" name="Net-(D10-Pad-)">
+      <node ref="R6" pin="2"/>
+      <node ref="D10" pin="-"/>
+    </net>
+    <net code="11" name="Net-(D11-Pad-)">
+      <node ref="D11" pin="-"/>
+      <node ref="R7" pin="2"/>
+    </net>
+    <net code="12" name="Net-(D12-Pad-)">
+      <node ref="D12" pin="-"/>
+      <node ref="R8" pin="2"/>
+    </net>
+    <net code="13" name="Net-(D13-Pad-)">
+      <node ref="D13" pin="-"/>
+      <node ref="R9" pin="2"/>
+    </net>
+    <net code="14" name="SCK2">
+      <node ref="U4" pin="6"/>
+    </net>
+    <net code="15" name="MISO2">
+      <node ref="U4" pin="7"/>
+    </net>
+    <net code="16" name="MOSI2">
+      <node ref="U4" pin="8"/>
+    </net>
+    <net code="17" name="SCL1">
+      <node ref="U4" pin="9"/>
+    </net>
+    <net code="18" name="SDA1">
+      <node ref="U4" pin="10"/>
+    </net>
+    <net code="19" name="LED_BLUE">
+      <node ref="U4" pin="18"/>
+      <node ref="D13" pin="+"/>
+    </net>
+    <net code="20" name="LED_YELLOW">
+      <node ref="D12" pin="+"/>
+      <node ref="U4" pin="19"/>
+    </net>
+    <net code="21" name="LED_GREEN">
+      <node ref="D11" pin="+"/>
+      <node ref="U4" pin="20"/>
+    </net>
+    <net code="22" name="LED_RED">
+      <node ref="D10" pin="+"/>
+      <node ref="U4" pin="21"/>
+    </net>
+    <net code="23" name="SW_USR">
+      <node ref="U4" pin="25"/>
+      <node ref="SW6" pin="2"/>
+      <node ref="SW6" pin="4"/>
+      <node ref="C16" pin="1"/>
+    </net>
+    <net code="24" name="SW1">
+      <node ref="SW1" pin="2"/>
+      <node ref="SW1" pin="4"/>
+      <node ref="U4" pin="26"/>
+      <node ref="C10" pin="1"/>
+      <node ref="R10" pin="2"/>
+    </net>
+    <net code="25" name="SW2">
+      <node ref="R12" pin="2"/>
+      <node ref="C12" pin="1"/>
+      <node ref="SW3" pin="4"/>
+      <node ref="U4" pin="27"/>
+      <node ref="SW3" pin="2"/>
+    </net>
+    <net code="26" name="+12V">
+      <node ref="C15" pin="1"/>
+      <node ref="R14" pin="1"/>
+      <node ref="D5" pin="1"/>
+      <node ref="U2" pin="17"/>
+      <node ref="C9" pin="1"/>
+      <node ref="C4" pin="2"/>
+      <node ref="C14" pin="1"/>
+    </net>
+    <net code="27" name="Net-(R4-Pad1)">
+      <node ref="R4" pin="1"/>
+      <node ref="U2" pin="26"/>
+    </net>
+    <net code="28" name="Net-(C8-Pad1)">
+      <node ref="U6" pin="5"/>
+      <node ref="C8" pin="1"/>
+    </net>
+    <net code="29" name="Net-(R5-Pad1)">
+      <node ref="R5" pin="1"/>
+      <node ref="U6" pin="4"/>
+    </net>
+    <net code="30" name="Net-(D5-Pad2)">
+      <node ref="U6" pin="1"/>
+      <node ref="D5" pin="2"/>
+      <node ref="L1" pin="2"/>
+    </net>
+    <net code="31" name="Net-(C9-Pad2)">
+      <node ref="C9" pin="2"/>
+      <node ref="R14" pin="2"/>
+      <node ref="U6" pin="3"/>
+      <node ref="R15" pin="1"/>
+    </net>
+    <net code="32" name="OLED_MOSI">
+      <node ref="U2" pin="19"/>
+    </net>
+    <net code="33" name="GND">
+      <node ref="J7" pin="4"/>
+      <node ref="U2" pin="10"/>
+      <node ref="C2" pin="1"/>
+      <node ref="C15" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U6" pin="2"/>
+      <node ref="C14" pin="2"/>
+      <node ref="R15" pin="2"/>
+      <node ref="D2" pin="3"/>
+      <node ref="U5" pin="9"/>
+      <node ref="R6" pin="1"/>
+      <node ref="J1" pin="2"/>
+      <node ref="U5" pin="20"/>
+      <node ref="U2" pin="21"/>
+      <node ref="U5" pin="18"/>
+      <node ref="D1" pin="3"/>
+      <node ref="J5" pin="4"/>
+      <node ref="J6" pin="4"/>
+      <node ref="J4" pin="4"/>
+      <node ref="U2" pin="22"/>
+      <node ref="U2" pin="23"/>
+      <node ref="J3" pin="4"/>
+      <node ref="U2" pin="14"/>
+      <node ref="U2" pin="24"/>
+      <node ref="U2" pin="15"/>
+      <node ref="J2" pin="4"/>
+      <node ref="U2" pin="25"/>
+      <node ref="U5" pin="11"/>
+      <node ref="R9" pin="1"/>
+      <node ref="R8" pin="1"/>
+      <node ref="R7" pin="1"/>
+      <node ref="C7" pin="2"/>
+      <node ref="D3" pin="3"/>
+      <node ref="U2" pin="2"/>
+      <node ref="C3" pin="1"/>
+      <node ref="D4" pin="3"/>
+      <node ref="C1" pin="1"/>
+      <node ref="SW6" pin="1"/>
+      <node ref="R4" pin="2"/>
+      <node ref="SW5" pin="1"/>
+      <node ref="C6" pin="1"/>
+      <node ref="C4" pin="1"/>
+      <node ref="C11" pin="2"/>
+      <node ref="C16" pin="2"/>
+      <node ref="SW6" pin="3"/>
+      <node ref="SW5" pin="3"/>
+      <node ref="C12" pin="2"/>
+      <node ref="C5" pin="1"/>
+      <node ref="SW4" pin="3"/>
+      <node ref="SW4" pin="1"/>
+      <node ref="D8" pin="3"/>
+      <node ref="SW1" pin="1"/>
+      <node ref="SW1" pin="3"/>
+      <node ref="C10" pin="2"/>
+      <node ref="U3" pin="10"/>
+      <node ref="D7" pin="3"/>
+      <node ref="SW3" pin="1"/>
+      <node ref="U3" pin="1"/>
+      <node ref="SW2" pin="3"/>
+      <node ref="SW2" pin="1"/>
+      <node ref="C13" pin="2"/>
+      <node ref="D6" pin="3"/>
+      <node ref="D9" pin="3"/>
+      <node ref="SW3" pin="3"/>
+    </net>
+    <net code="34" name="~RST">
+      <node ref="SW5" pin="2"/>
+      <node ref="SW5" pin="4"/>
+    </net>
+    <net code="35" name="OLED_D/~C">
+      <node ref="U2" pin="13"/>
+    </net>
+    <net code="36" name="NRF_RX">
+      <node ref="U3" pin="17"/>
+    </net>
+    <net code="37" name="OLED_~SS">
+      <node ref="U2" pin="11"/>
+    </net>
+    <net code="38" name="NRF_MOSI">
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="39" name="NRF_MISO">
+      <node ref="U3" pin="4"/>
+    </net>
+    <net code="40" name="NRF_SCK">
+      <node ref="U3" pin="5"/>
+    </net>
+    <net code="41" name="NRF_SWDIO">
+      <node ref="U3" pin="24"/>
+    </net>
+    <net code="42" name="NRF_SWDCK">
+      <node ref="U3" pin="25"/>
+    </net>
+    <net code="43" name="ACC_SCL">
+      <node ref="U5" pin="23"/>
+    </net>
+    <net code="44" name="ACC_SDA">
+      <node ref="U5" pin="24"/>
+    </net>
+    <net code="45" name="IMU_INT">
+      <node ref="U5" pin="12"/>
+    </net>
+    <net code="46" name="NRF_TX">
+      <node ref="U3" pin="16"/>
+    </net>
+    <net code="47" name="OLED_~RST">
+      <node ref="R3" pin="1"/>
+      <node ref="U2" pin="12"/>
+    </net>
+    <net code="48" name="Net-(U3-Pad23)">
+      <node ref="U3" pin="23"/>
+    </net>
+    <net code="49" name="Net-(U3-Pad8)">
+      <node ref="U3" pin="8"/>
+    </net>
+    <net code="50" name="Net-(U3-Pad9)">
+      <node ref="U3" pin="9"/>
+    </net>
+    <net code="51" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="52" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="53" name="Net-(U3-Pad13)">
+      <node ref="U3" pin="13"/>
+    </net>
+    <net code="54" name="Net-(U3-Pad14)">
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="55" name="Net-(U3-Pad15)">
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="56" name="Net-(U3-Pad18)">
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="57" name="Net-(U3-Pad19)">
+      <node ref="U3" pin="19"/>
+    </net>
+    <net code="58" name="Net-(U3-Pad20)">
+      <node ref="U3" pin="20"/>
+    </net>
+    <net code="59" name="Net-(U3-Pad21)">
+      <node ref="U3" pin="21"/>
+    </net>
+    <net code="60" name="Net-(U3-Pad22)">
+      <node ref="U3" pin="22"/>
+    </net>
+    <net code="61" name="Net-(U3-Pad7)">
+      <node ref="U3" pin="7"/>
+    </net>
+    <net code="62" name="Net-(U5-Pad17)">
+      <node ref="U5" pin="17"/>
+    </net>
+    <net code="63" name="Net-(U5-Pad16)">
+      <node ref="U5" pin="16"/>
+    </net>
+    <net code="64" name="Net-(U5-Pad15)">
+      <node ref="U5" pin="15"/>
+    </net>
+    <net code="65" name="Net-(U5-Pad14)">
+      <node ref="U5" pin="14"/>
+    </net>
+    <net code="66" name="Net-(U5-Pad6)">
+      <node ref="U5" pin="6"/>
+    </net>
+    <net code="67" name="Net-(U5-Pad5)">
+      <node ref="U5" pin="5"/>
+    </net>
+    <net code="68" name="Net-(U5-Pad4)">
+      <node ref="U5" pin="4"/>
+    </net>
+    <net code="69" name="Net-(U5-Pad3)">
+      <node ref="U5" pin="3"/>
+    </net>
+    <net code="70" name="Net-(U5-Pad2)">
+      <node ref="U5" pin="2"/>
+    </net>
+    <net code="71" name="Net-(U5-Pad21)">
+      <node ref="U5" pin="21"/>
+    </net>
+    <net code="72" name="Net-(U5-Pad7)">
+      <node ref="U5" pin="7"/>
+    </net>
+    <net code="73" name="Net-(U5-Pad19)">
+      <node ref="U5" pin="19"/>
+    </net>
+    <net code="74" name="VCC">
+      <node ref="D2" pin="1"/>
+      <node ref="C5" pin="2"/>
+      <node ref="U5" pin="22"/>
+      <node ref="U5" pin="13"/>
+      <node ref="U5" pin="8"/>
+      <node ref="R12" pin="1"/>
+      <node ref="U5" pin="1"/>
+      <node ref="D4" pin="1"/>
+      <node ref="L1" pin="1"/>
+      <node ref="J7" pin="3"/>
+      <node ref="D3" pin="1"/>
+      <node ref="R5" pin="2"/>
+      <node ref="C7" pin="1"/>
+      <node ref="U6" pin="6"/>
+      <node ref="R3" pin="2"/>
+      <node ref="U3" pin="2"/>
+      <node ref="C1" pin="2"/>
+      <node ref="C3" pin="2"/>
+      <node ref="D9" pin="1"/>
+      <node ref="D1" pin="1"/>
+      <node ref="D8" pin="1"/>
+      <node ref="D7" pin="1"/>
+      <node ref="D6" pin="1"/>
+      <node ref="R10" pin="1"/>
+      <node ref="J3" pin="3"/>
+      <node ref="J2" pin="3"/>
+      <node ref="J5" pin="3"/>
+      <node ref="J6" pin="3"/>
+      <node ref="J4" pin="3"/>
+      <node ref="U2" pin="8"/>
+      <node ref="U2" pin="9"/>
+      <node ref="R13" pin="1"/>
+      <node ref="R11" pin="1"/>
+      <node ref="J1" pin="1"/>
+    </net>
+    <net code="75" name="Net-(U2-Pad27)">
+      <node ref="U2" pin="27"/>
+    </net>
+    <net code="76" name="Net-(U2-Pad1)">
+      <node ref="U2" pin="1"/>
+    </net>
+    <net code="77" name="Net-(U2-Pad3)">
+      <node ref="U2" pin="3"/>
+    </net>
+    <net code="78" name="Net-(U2-Pad4)">
+      <node ref="U2" pin="4"/>
+    </net>
+    <net code="79" name="Net-(U2-Pad5)">
+      <node ref="U2" pin="5"/>
+    </net>
+    <net code="80" name="Net-(U2-Pad6)">
+      <node ref="U2" pin="6"/>
+    </net>
+    <net code="81" name="Net-(U2-Pad7)">
+      <node ref="U2" pin="7"/>
+    </net>
+    <net code="82" name="Net-(U2-Pad20)">
+      <node ref="U2" pin="20"/>
+    </net>
+    <net code="83" name="Net-(U3-Pad6)">
+      <node ref="U3" pin="6"/>
+    </net>
+    <net code="84" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="D2" pin="4"/>
+    </net>
+    <net code="85" name="Net-(D2-Pad2)">
+      <node ref="D2" pin="2"/>
+      <node ref="D3" pin="4"/>
+    </net>
+    <net code="86" name="Net-(D3-Pad2)">
+      <node ref="D3" pin="2"/>
+      <node ref="D4" pin="4"/>
+    </net>
+    <net code="87" name="Net-(D4-Pad2)">
+      <node ref="D6" pin="4"/>
+      <node ref="D4" pin="2"/>
+    </net>
+    <net code="88" name="OLED_SCK">
+      <node ref="U2" pin="18"/>
+    </net>
+    <net code="89" name="Net-(D6-Pad2)">
+      <node ref="D6" pin="2"/>
+      <node ref="D7" pin="4"/>
+    </net>
+    <net code="90" name="Net-(C6-Pad2)">
+      <node ref="C6" pin="2"/>
+      <node ref="U2" pin="16"/>
+    </net>
+    <net code="91" name="Net-(C2-Pad2)">
+      <node ref="C2" pin="2"/>
+      <node ref="U5" pin="10"/>
+    </net>
+    <net code="92" name="Net-(D7-Pad2)">
+      <node ref="D7" pin="2"/>
+      <node ref="D8" pin="4"/>
+    </net>
+    <net code="93" name="Net-(D8-Pad2)">
+      <node ref="D8" pin="2"/>
+      <node ref="D9" pin="4"/>
+    </net>
+    <net code="94" name="Net-(J4-Pad2)">
+      <node ref="J4" pin="2"/>
+    </net>
+    <net code="95" name="Net-(J6-Pad1)">
+      <node ref="J6" pin="1"/>
+    </net>
+    <net code="96" name="Net-(J6-Pad2)">
+      <node ref="J6" pin="2"/>
+    </net>
+    <net code="97" name="Net-(J5-Pad1)">
+      <node ref="J5" pin="1"/>
+    </net>
+    <net code="98" name="Net-(J5-Pad2)">
+      <node ref="J5" pin="2"/>
+    </net>
+    <net code="99" name="Net-(J4-Pad1)">
+      <node ref="J4" pin="1"/>
+    </net>
+    <net code="100" name="Net-(J2-Pad1)">
+      <node ref="J2" pin="1"/>
+    </net>
+    <net code="101" name="Net-(J2-Pad2)">
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="102" name="Net-(J3-Pad1)">
+      <node ref="J3" pin="1"/>
+    </net>
+    <net code="103" name="Net-(J3-Pad2)">
+      <node ref="J3" pin="2"/>
+    </net>
+    <net code="104" name="Net-(J9-Pad1)">
+      <node ref="J9" pin="1"/>
+    </net>
+    <net code="105" name="Net-(J9-Pad2)">
+      <node ref="J9" pin="2"/>
+    </net>
+    <net code="106" name="Net-(J9-Pad3)">
+      <node ref="J9" pin="3"/>
+    </net>
+    <net code="107" name="Net-(J9-Pad4)">
+      <node ref="J9" pin="4"/>
+    </net>
+    <net code="108" name="Net-(J9-Pad5)">
+      <node ref="J9" pin="5"/>
+    </net>
+    <net code="109" name="Net-(J9-Pad6)">
+      <node ref="J9" pin="6"/>
+    </net>
+    <net code="110" name="Net-(J9-Pad7)">
+      <node ref="J9" pin="7"/>
+    </net>
+    <net code="111" name="Net-(J9-Pad8)">
+      <node ref="J9" pin="8"/>
+    </net>
+    <net code="112" name="Net-(J9-Pad9)">
+      <node ref="J9" pin="9"/>
+    </net>
+    <net code="113" name="Net-(J9-Pad10)">
+      <node ref="J9" pin="10"/>
+    </net>
+    <net code="114" name="Net-(J9-Pad20)">
+      <node ref="J9" pin="20"/>
+    </net>
+    <net code="115" name="Net-(U4-Pad16)">
+      <node ref="U4" pin="16"/>
+    </net>
+    <net code="116" name="Net-(U4-Pad43)">
+      <node ref="U4" pin="43"/>
+    </net>
+    <net code="117" name="Net-(U4-Pad53)">
+      <node ref="U4" pin="53"/>
+    </net>
+    <net code="118" name="Net-(U4-Pad14)">
+      <node ref="U4" pin="14"/>
+    </net>
+    <net code="119" name="Net-(U4-Pad24)">
+      <node ref="U4" pin="24"/>
+    </net>
+    <net code="120" name="Net-(U4-Pad34)">
+      <node ref="U4" pin="34"/>
+    </net>
+    <net code="121" name="Net-(U4-Pad44)">
+      <node ref="U4" pin="44"/>
+    </net>
+    <net code="122" name="Net-(U4-Pad54)">
+      <node ref="U4" pin="54"/>
+    </net>
+    <net code="123" name="Net-(U4-Pad15)">
+      <node ref="U4" pin="15"/>
+    </net>
+    <net code="124" name="Net-(U4-Pad35)">
+      <node ref="U4" pin="35"/>
+    </net>
+    <net code="125" name="Net-(U4-Pad55)">
+      <node ref="U4" pin="55"/>
+    </net>
+    <net code="126" name="Net-(U4-Pad33)">
+      <node ref="U4" pin="33"/>
+    </net>
+    <net code="127" name="Net-(U4-Pad36)">
+      <node ref="U4" pin="36"/>
+    </net>
+    <net code="128" name="Net-(U4-Pad56)">
+      <node ref="U4" pin="56"/>
+    </net>
+    <net code="129" name="Net-(U4-Pad17)">
+      <node ref="U4" pin="17"/>
+    </net>
+    <net code="130" name="Net-(U4-Pad37)">
+      <node ref="U4" pin="37"/>
+    </net>
+    <net code="131" name="Net-(U4-Pad38)">
+      <node ref="U4" pin="38"/>
+    </net>
+    <net code="132" name="Net-(U4-Pad2)">
+      <node ref="U4" pin="2"/>
+    </net>
+    <net code="133" name="Net-(U4-Pad3)">
+      <node ref="U4" pin="3"/>
+    </net>
+    <net code="134" name="Net-(U4-Pad4)">
+      <node ref="U4" pin="4"/>
+    </net>
+    <net code="135" name="Net-(U4-Pad30)">
+      <node ref="U4" pin="30"/>
+    </net>
+    <net code="136" name="Net-(U4-Pad40)">
+      <node ref="U4" pin="40"/>
+    </net>
+    <net code="137" name="Net-(U4-Pad11)">
+      <node ref="U4" pin="11"/>
+    </net>
+    <net code="138" name="Net-(U4-Pad31)">
+      <node ref="U4" pin="31"/>
+    </net>
+    <net code="139" name="Net-(U4-Pad41)">
+      <node ref="U4" pin="41"/>
+    </net>
+    <net code="140" name="Net-(U4-Pad51)">
+      <node ref="U4" pin="51"/>
+    </net>
+    <net code="141" name="Net-(U4-Pad12)">
+      <node ref="U4" pin="12"/>
+    </net>
+    <net code="142" name="Net-(U4-Pad22)">
+      <node ref="U4" pin="22"/>
+    </net>
+    <net code="143" name="Net-(U4-Pad32)">
+      <node ref="U4" pin="32"/>
+    </net>
+    <net code="144" name="Net-(U4-Pad42)">
+      <node ref="U4" pin="42"/>
+    </net>
+    <net code="145" name="Net-(U4-Pad52)">
+      <node ref="U4" pin="52"/>
+    </net>
+    <net code="146" name="Net-(U4-Pad13)">
+      <node ref="U4" pin="13"/>
+    </net>
+    <net code="147" name="Net-(U4-Pad23)">
+      <node ref="U4" pin="23"/>
+    </net>
+    <net code="148" name="Net-(U4-Pad39)">
+      <node ref="U4" pin="39"/>
+    </net>
+    <net code="149" name="Net-(J9-Pad11)">
+      <node ref="J9" pin="11"/>
+    </net>
+    <net code="150" name="Net-(D9-Pad2)">
+      <node ref="D9" pin="2"/>
+    </net>
+    <net code="151" name="Net-(D1-Pad4)">
+      <node ref="D1" pin="4"/>
+    </net>
+    <net code="152" name="Net-(J7-Pad1)">
+      <node ref="J7" pin="1"/>
+    </net>
+    <net code="153" name="Net-(J7-Pad2)">
+      <node ref="J7" pin="2"/>
+    </net>
+    <net code="154" name="Net-(J8-Pad1)">
+      <node ref="J8" pin="1"/>
+    </net>
+    <net code="155" name="Net-(J8-Pad2)">
+      <node ref="J8" pin="2"/>
+    </net>
+    <net code="156" name="Net-(J9-Pad19)">
+      <node ref="J9" pin="19"/>
+    </net>
+    <net code="157" name="Net-(J9-Pad21)">
+      <node ref="J9" pin="21"/>
+    </net>
+    <net code="158" name="Net-(J9-Pad12)">
+      <node ref="J9" pin="12"/>
+    </net>
+    <net code="159" name="Net-(J9-Pad22)">
+      <node ref="J9" pin="22"/>
+    </net>
+    <net code="160" name="Net-(J9-Pad13)">
+      <node ref="J9" pin="13"/>
+    </net>
+    <net code="161" name="Net-(J9-Pad23)">
+      <node ref="J9" pin="23"/>
+    </net>
+    <net code="162" name="Net-(J9-Pad14)">
+      <node ref="J9" pin="14"/>
+    </net>
+    <net code="163" name="Net-(J9-Pad24)">
+      <node ref="J9" pin="24"/>
+    </net>
+    <net code="164" name="Net-(J9-Pad15)">
+      <node ref="J9" pin="15"/>
+    </net>
+    <net code="165" name="Net-(J9-Pad25)">
+      <node ref="J9" pin="25"/>
+    </net>
+    <net code="166" name="Net-(J9-Pad16)">
+      <node ref="J9" pin="16"/>
+    </net>
+    <net code="167" name="Net-(J9-Pad17)">
+      <node ref="J9" pin="17"/>
+    </net>
+    <net code="168" name="Net-(J9-Pad18)">
+      <node ref="J9" pin="18"/>
+    </net>
+    <net code="169" name="Net-(J8-Pad3)">
+      <node ref="J8" pin="3"/>
+    </net>
+    <net code="170" name="Net-(J8-Pad4)">
+      <node ref="J8" pin="4"/>
+    </net>
+    <net code="171" name="Net-(U4-Pad1)">
+      <node ref="U4" pin="1"/>
+    </net>
+  </nets>
+</export>
