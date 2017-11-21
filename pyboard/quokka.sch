@@ -1451,7 +1451,7 @@ MOSI1
 Text GLabel 8950 5050 2    60   Input ~ 0
 MISO1
 Text GLabel 8950 5250 2    60   Input ~ 0
-~SS1/DAC2
+SS1/DAC2
 Text GLabel 4750 4750 0    60   Input ~ 0
 MOSI2
 Text GLabel 4750 4650 0    60   Input ~ 0
@@ -2830,4 +2830,17 @@ Wire Wire Line
 Connection ~ 11450 9300
 NoConn ~ 10650 7950
 NoConn ~ 11350 8150
+$Comp
+L GND #PWR?
+U 1 1 5A16D5FA
+P 11800 5550
+F 0 "#PWR?" H 11800 5300 50  0001 C CNN
+F 1 "GND" H 11800 5400 50  0000 C CNN
+F 2 "" H 11800 5550 50  0001 C CNN
+F 3 "" H 11800 5550 50  0001 C CNN
+	1    11800 5550
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	11950 5550 11800 5550
 $EndSCHEMATC
