@@ -54,30 +54,6 @@ X ~ 2 0 -100 80 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x02
-#
-DEF Conn_01x02 J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "Conn_01x02" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # Conn_01x04
 #
 DEF Conn_01x04 J 0 40 Y N 1 F N
@@ -144,115 +120,47 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# Grove_Analog
+# Grove-SMD
 #
-DEF Grove_Analog J 0 80 Y Y 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Grove_Analog" 0 -300 50 H V C CNN
-F2 "" -150 0 50 H I C CNN
-F3 "" -150 0 50 H I C CNN
+DEF Grove-SMD J 0 40 N Y 1 L N
+F0 "J" 150 -100 45 H V L BNN
+F1 "Grove-SMD" 150 50 45 H V L BNN
+F2 "Seeed-Connector_HW4-SMD-2.0" 400 150 20 H I C CNN
+F3 "" 0 0 60 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ *HW4-SMD-2.0*
 $ENDFPLIST
 DRAW
-S -200 -195 -150 -205 1 1 6 N
-S -200 -95 -150 -105 1 1 6 N
-S -200 5 -150 -5 1 1 6 N
-S -200 105 -150 95 1 1 6 N
-S -200 150 200 -250 1 1 10 f
-X A1 1 -350 100 150 R 50 50 1 1 B
-X A2 2 -350 0 150 R 50 50 1 1 B
-X VCC 3 -350 -100 150 R 50 50 1 1 W
-X GND 4 -350 -200 150 R 50 50 1 1 W
+S -100 350 100 -350 0 1 0 f
+X 1 1 -200 150 200 R 40 40 1 1 B IC
+X 2 2 -200 50 200 R 40 40 1 1 B I
+X 3 3 -200 -50 200 R 40 40 1 1 B I
+X 4 4 -200 -150 200 R 40 40 1 1 B I
+X SS1 SS1 0 450 100 D 40 40 1 1 B
+X SS2 SS2 0 -450 100 U 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# Grove_Digital
+# JST-SMD
 #
-DEF Grove_Digital J 0 80 Y Y 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Grove_Digital" 0 -300 50 H V C CNN
-F2 "" -150 0 50 H I C CNN
-F3 "" -150 0 50 H I C CNN
+DEF JST-SMD J 0 60 N Y 1 F N
+F0 "J" -200 -50 45 H V L BNN
+F1 "JST-SMD" -450 50 45 H V L BNN
+F2 "Seeed-Connector_HW2-SMD-1.0-90D" 180 150 20 H I C CNN
+F3 "" 150 0 60 H I C CNN
 $FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
+ *HW2-SMD-1.0-90D*
 $ENDFPLIST
 DRAW
-S -200 -195 -150 -205 1 1 6 N
-S -200 -95 -150 -105 1 1 6 N
-S -200 5 -150 -5 1 1 6 N
-S -200 105 -150 95 1 1 6 N
-S -200 150 200 -250 1 1 10 f
-X D1 1 -350 100 150 R 50 50 1 1 B
-X D2 2 -350 0 150 R 50 50 1 1 B
-X VCC 3 -350 -100 150 R 50 50 1 1 W
-X GND 4 -350 -200 150 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Grove_I2C
-#
-DEF Grove_I2C J 0 80 Y Y 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Grove_I2C" 0 -300 50 H V C CNN
-F2 "" -150 0 50 H I C CNN
-F3 "" -150 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -200 -195 -150 -205 1 1 6 N
-S -200 -95 -150 -105 1 1 6 N
-S -200 5 -150 -5 1 1 6 N
-S -200 105 -150 95 1 1 6 N
-S -200 150 200 -250 1 1 10 f
-X SCL 1 -350 100 150 R 50 50 1 1 B
-X SDA 2 -350 0 150 R 50 50 1 1 B
-X VCC 3 -350 -100 150 R 50 50 1 1 W
-X GND 4 -350 -200 150 R 50 50 1 1 W
-ENDDRAW
-ENDDEF
-#
-# Grove_SPI
-#
-DEF Grove_SPI J 0 80 Y Y 1 F N
-F0 "J" 0 200 50 H V C CNN
-F1 "Grove_SPI" 0 -300 50 H V C CNN
-F2 "" -150 0 50 H I C CNN
-F3 "" -150 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -200 -195 -150 -205 1 1 6 N
-S -200 -95 -150 -105 1 1 6 N
-S -200 5 -150 -5 1 1 6 N
-S -200 105 -150 95 1 1 6 N
-S -200 150 200 -250 1 1 10 f
-X SCK 1 -350 100 150 R 50 50 1 1 B
-X MOSI 2 -350 0 150 R 50 50 1 1 B
-X VCC 3 -350 -100 150 R 50 50 1 1 W
-X GND 4 -350 -200 150 R 50 50 1 1 W
+P 2 1 0 0 100 -50 100 -100 N
+P 2 1 0 0 100 100 100 50 N
+P 2 1 0 0 150 -50 100 -50 N
+P 2 1 0 0 150 50 100 50 N
+S -100 150 100 -150 0 1 0 f
+X 1 + 250 50 100 L 40 40 1 1 B
+X 2 - 250 -50 100 L 40 40 1 1 B
+X 3 3 0 -250 100 U 40 40 1 1 B
+X 4 4 0 250 100 D 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
