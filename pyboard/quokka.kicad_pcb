@@ -15,25 +15,27 @@
   (page A4)
   (layers
     (0 F.Cu signal)
+    (1 In1.Cu signal)
+    (2 In2.Cu signal)
     (31 B.Cu signal)
     (32 B.Adhes user)
     (33 F.Adhes user)
-    (34 B.Paste user hide)
-    (35 F.Paste user hide)
+    (34 B.Paste user)
+    (35 F.Paste user)
     (36 B.SilkS user)
     (37 F.SilkS user)
-    (38 B.Mask user hide)
-    (39 F.Mask user hide)
+    (38 B.Mask user)
+    (39 F.Mask user)
     (40 Dwgs.User user)
-    (41 Cmts.User user hide)
-    (42 Eco1.User user hide)
-    (43 Eco2.User user hide)
+    (41 Cmts.User user)
+    (42 Eco1.User user)
+    (43 Eco2.User user)
     (44 Edge.Cuts user)
-    (45 Margin user hide)
+    (45 Margin user)
     (46 B.CrtYd user)
     (47 F.CrtYd user)
-    (48 B.Fab user hide)
-    (49 F.Fab user hide)
+    (48 B.Fab user)
+    (49 F.Fab user)
   )
 
   (setup
@@ -340,7 +342,7 @@
   )
 
   (module Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM (layer F.Cu) (tedit 5A1036DC) (tstamp 5A0BE0BA)
-    (at 90.424 95.504 90)
+    (at 88.519 96.585 90)
     (path /59DC91B3)
     (fp_text reference SW1 (at -2.54 -3.175 90) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -409,7 +411,7 @@
   )
 
   (module Seeed-Switch:SW4-SMD-6.0X6.0X5.0MM (layer F.Cu) (tedit 5A10369F) (tstamp 5A0BE0D2)
-    (at 128.143 95.693 270)
+    (at 129.921 96.585 270)
     (path /59DC934B)
     (fp_text reference SW4 (at -2.54 -3.175 270) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -700,7 +702,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A103654) (tstamp 5A0D7A3D)
-    (at 90.424 71.12)
+    (at 88.646 71.628)
     (path /5A0D7FC5)
     (fp_text reference D1 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -724,7 +726,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A103657) (tstamp 5A0D7A45)
-    (at 90.424 76.454)
+    (at 88.646 76.962)
     (path /5A0D7C53)
     (fp_text reference D2 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -749,7 +751,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A10365A) (tstamp 5A0D7A4D)
-    (at 90.424 81.788)
+    (at 88.646 82.296)
     (path /5A0D7D0B)
     (fp_text reference D3 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -774,7 +776,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A10365C) (tstamp 5A0D7A55)
-    (at 90.424 87.122)
+    (at 88.646 87.63)
     (path /5A0D7E4B)
     (fp_text reference D4 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -799,10 +801,10 @@
   )
 
   (module Seeed-Diode:SOD-123 (layer F.Cu) (tedit 5A1036B3) (tstamp 5A0D7A5B)
-    (at 77.216 99.314)
+    (at 76.962 99.06)
     (descr <b>Diode</b>)
     (path /5A0C049B)
-    (fp_text reference D5 (at -0.889 0.635) (layer F.Mask)
+    (fp_text reference D5 (at -0.508 1.778) (layer F.Mask)
       (effects (font (size 0.36195 0.36195) (thickness 0.0381)) (justify left bottom))
     )
     (fp_text value SS0520 (at -1.905 2.032) (layer F.SilkS) hide
@@ -838,7 +840,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A10365F) (tstamp 5A0D7A63)
-    (at 127.762 71.12)
+    (at 129.794 71.628)
     (path /5A0D87CF)
     (fp_text reference D6 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -863,7 +865,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A103661) (tstamp 5A0D7A6B)
-    (at 127.762 76.454)
+    (at 129.794 76.962)
     (path /5A0D87BD)
     (fp_text reference D7 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -888,7 +890,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A103663) (tstamp 5A0D7A73)
-    (at 127.762 81.788)
+    (at 129.794 82.296)
     (path /5A0D87C3)
     (fp_text reference D8 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -913,7 +915,7 @@
   )
 
   (module Seeed-Diode:LED4-SMD-5050 (layer F.Cu) (tedit 5A103666) (tstamp 5A0D7A7B)
-    (at 127.762 87.122)
+    (at 129.794 87.63)
     (path /5A0D87C9)
     (fp_text reference D9 (at -0.889 0.381) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
@@ -1361,7 +1363,7 @@
   )
 
   (module Seeed-Capacitor:C0805 (layer B.Cu) (tedit 0) (tstamp 5A2908E3)
-    (at 91.948 95.504)
+    (at 90.424 96.52)
     (descr <b>0805<b><p>)
     (path /59DC91C5)
     (fp_text reference C10 (at 1.143 1.905 270) (layer B.SilkS)
@@ -1421,7 +1423,7 @@
   )
 
   (module Seeed-Capacitor:C0805 (layer B.Cu) (tedit 0) (tstamp 5A290901)
-    (at 127 95.758)
+    (at 128.524 96.52)
     (descr <b>0805<b><p>)
     (path /59DC935D)
     (fp_text reference C13 (at 1.143 1.905 270) (layer B.SilkS)
@@ -1594,7 +1596,7 @@
   )
 
   (module Seeed-Resistor:R0805 (layer B.Cu) (tedit 0) (tstamp 5A290965)
-    (at 89.154 95.504)
+    (at 87.63 96.52)
     (path /59DC91BF)
     (fp_text reference R10 (at 1.016 1.905 270) (layer B.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify right top mirror))
@@ -1651,7 +1653,7 @@
   )
 
   (module Seeed-Resistor:R0805 (layer B.Cu) (tedit 0) (tstamp 5A290983)
-    (at 129.54 95.758)
+    (at 131.064 96.52)
     (path /59DC9357)
     (fp_text reference R13 (at 1.016 1.905 270) (layer B.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify right top mirror))
@@ -1776,9 +1778,9 @@
   )
 
   (module Seeed-Switch:SW4-SMD-5.2X5.2X1.5MM (layer F.Cu) (tedit 5A103622) (tstamp 5A1030CF)
-    (at 109.22 61.214 180)
+    (at 109.22 61.468 180)
     (path /5A1031AB)
-    (fp_text reference RST (at -1.27 3.81 180) (layer F.SilkS)
+    (fp_text reference RST (at 3.556 -1.27 270) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
     )
     (fp_text value SW_Push_Dual (at -1.7 0.1 180) (layer F.SilkS) hide
@@ -1811,7 +1813,7 @@
   (module Seeed-Switch:SW4-SMD-5.2X5.2X1.5MM (layer F.Cu) (tedit 5A10364A) (tstamp 5A1030D7)
     (at 109.22 67.564 180)
     (path /5A1031D8)
-    (fp_text reference USR (at -1.27 3.81 180) (layer F.SilkS)
+    (fp_text reference USR (at 3.556 -1.27 270) (layer F.SilkS)
       (effects (font (size 0.84455 0.84455) (thickness 0.09779)) (justify left bottom))
     )
     (fp_text value SW_Push_Dual (at -1.7 0.1 180) (layer F.SilkS) hide
@@ -2136,7 +2138,7 @@
   )
 
   (module logos:ncss (layer F.Cu) (tedit 0) (tstamp 5A1034F7)
-    (at 109.22 107.696)
+    (at 109.22 107.442)
     (path /5A110D61)
     (fp_text reference Z3 (at 0 0) (layer F.SilkS) hide
       (effects (font (thickness 0.3)))
@@ -2233,7 +2235,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3mm (layer F.Cu) (tedit 5A103714) (tstamp 5A1034FC)
-    (at 128.016 108.204)
+    (at 131.318 108.204)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
     (path /5A110E52)
@@ -2249,7 +2251,7 @@
   )
 
   (module Mounting_Holes:MountingHole_3mm (layer F.Cu) (tedit 5A103712) (tstamp 5A103501)
-    (at 90.424 108.458)
+    (at 87.122 108.204)
     (descr "Mounting Hole 3mm, no annular")
     (tags "mounting hole 3mm no annular")
     (path /5A111557)

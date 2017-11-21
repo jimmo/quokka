@@ -1,4 +1,4 @@
-update=Mon 20 Nov 2017 15:35:57 AEDT
+update=Tue 21 Nov 2017 19:36:34 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -73,6 +73,7 @@ LibName41=lib/seeed-opl-ic
 LibName42=lib/seeed-opl-led
 LibName43=lib/seeed-opl-diode
 LibName44=lib/symbol
+LibName45=lib/levelshifter
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
