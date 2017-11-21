@@ -2369,7 +2369,6 @@ Connection ~ 11000 10000
 Connection ~ 10400 10000
 Connection ~ 10400 10250
 NoConn ~ 4800 6800
-NoConn ~ 7950 6350
 NoConn ~ 4800 4400
 NoConn ~ 4800 4500
 NoConn ~ 4800 4600
@@ -2531,4 +2530,5 @@ F 3 "" H 15600 6750 60  0001 C CNN
 	1    15600 6750
 	1    0    0    -1  
 $EndComp
+NoConn ~ 4800 4200
 $EndSCHEMATC
