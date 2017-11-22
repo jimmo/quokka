@@ -1566,7 +1566,7 @@ F 3 "" H 750 9100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Text GLabel 2600 8900 1    60   Input ~ 0
-PYB_VIN
+PYB_VIN_LEFT
 $Comp
 L VCC #PWR051
 U 1 1 5A14030D
@@ -1579,9 +1579,9 @@ F 3 "" H 3150 8700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 4750 5650 0    60   Input ~ 0
-PYB_VIN
+PYB_VIN_RIGHT
 Text GLabel 7950 6250 3    60   Input ~ 0
-PYB_VIN
+PYB_VIN_LEFT
 $Comp
 L GND #PWR052
 U 1 1 5A141BDE
@@ -1755,7 +1755,7 @@ NoConn ~ 8550 4350
 NoConn ~ 7000 6000
 NoConn ~ 7100 6000
 Text GLabel 11500 1600 1    60   Input ~ 0
-PYB_VIN
+PYB_VIN_RIGHT
 $Comp
 L GND #PWR059
 U 1 1 5A1623E2
@@ -1843,7 +1843,7 @@ F 3 "" H 1900 1450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Text GLabel 2100 1300 1    60   Input ~ 0
-PYB_VIN
+PYB_VIN_RIGHT
 $Comp
 L Grove-SMD J2
 U 1 1 5A153167
@@ -2098,9 +2098,9 @@ F 3 "" H 3000 8900 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Text GLabel 3700 8000 1    60   Input ~ 0
-PYB_VIN
+PYB_VIN_LEFT
 Text GLabel 5300 8000 1    60   Input ~ 0
-PYB_VIN
+PYB_VIN_RIGHT
 $Comp
 L GND #PWR068
 U 1 1 5A157E12
@@ -2567,7 +2567,7 @@ Wire Wire Line
 Wire Wire Line
 	7950 6100 7950 6250
 Wire Wire Line
-	7800 6100 8100 6100
+	7800 6100 8200 6100
 Wire Wire Line
 	8000 6100 8000 6000
 Wire Wire Line
@@ -2705,11 +2705,11 @@ Wire Wire Line
 Wire Wire Line
 	2750 9650 3350 9650
 Wire Wire Line
-	3350 9650 3350 7500
+	3350 9650 3350 7250
 Wire Wire Line
-	3350 7500 4900 7500
+	3350 7250 4900 7250
 Wire Wire Line
-	4900 7500 4900 8250
+	4900 7250 4900 8250
 Wire Wire Line
 	2100 1300 2100 1400
 Wire Wire Line
@@ -2916,4 +2916,16 @@ Wire Wire Line
 	1750 1100 1750 1200
 NoConn ~ 8950 4050
 NoConn ~ 6100 6250
+$Comp
+L PWR_FLAG #FLG072
+U 1 1 5A1752AE
+P 8200 6100
+F 0 "#FLG072" H 8200 6175 50  0001 C CNN
+F 1 "PWR_FLAG" H 8200 6250 50  0000 C CNN
+F 2 "" H 8200 6100 50  0001 C CNN
+F 3 "" H 8200 6100 50  0001 C CNN
+	1    8200 6100
+	0    1    1    0   
+$EndComp
+Connection ~ 8100 6100
 $EndSCHEMATC
