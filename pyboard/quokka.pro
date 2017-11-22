@@ -1,4 +1,4 @@
-update=Wed 22 Nov 2017 18:34:54 AEDT
+update=Wed 22 Nov 2017 21:40:08 AEDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -25,6 +25,16 @@ version=1
 NetIExt=net
 [general]
 version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
 [eeschema]
 version=1
 LibDir=
@@ -75,13 +85,4 @@ LibName43=lib/symbol
 LibName44=lib/levelshifter
 LibName45=lib/seeed-opl-connector
 LibName46=lib/seeed-opl-switch
-[schematic_editor]
-version=1
-PageLayoutDescrFile=
-PlotDirectoryName=
-SubpartIdSeparator=0
-SubpartFirstId=65
-NetFmtName=
-SpiceForceRefPrefix=0
-SpiceUseNetNumbers=0
-LabSize=60
+LibName47=lib/seeed-opl-capacitor
