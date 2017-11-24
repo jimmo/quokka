@@ -29,4 +29,5 @@
   (lib (name nrf51822)(type KiCad)(uri "$(KIPRJMOD)/lib/nrf51822.pretty")(options "")(descr ""))
   (lib (name logos)(type KiCad)(uri "$(KIPRJMOD)/lib/logos.pretty")(options "")(descr ""))
   (lib (name levelshifter)(type KiCad)(uri "$(KIPRJMOD)/lib/levelshifter.pretty")(options "")(descr ""))
+  (lib (name seeed-fixed)(type KiCad)(uri "$(KIPRJMOD)/lib/seeed-fixed.pretty")(options "")(descr ""))
 )

@@ -17,7 +17,6 @@ cp quokka-B.SilkS.gbr /tmp/quokka/quokka.GBO
 cp quokka-Edge.Cuts.gbr /tmp/quokka/quokka.GML
 
 cp quokka.drl /tmp/quokka/quokka.DRL
-cp quokka-NPTH.drl /tmp/quokka/quokka-NPTH.DRL
 
 pushd /tmp/quokka
 zip quokka.zip quokka.G* quokka.DRL
