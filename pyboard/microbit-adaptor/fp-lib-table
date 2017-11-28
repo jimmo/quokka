@@ -1,0 +1,4 @@
+(fp_lib_table
+  (lib (name microbit-socket)(type KiCad)(uri "$(KIPRJMOD)/lib/microbit-socket.pretty")(options "")(descr ""))
+  (lib (name microbit)(type KiCad)(uri "$(KIPRJMOD)/../lib/microbit.pretty")(options "")(descr ""))
+)
