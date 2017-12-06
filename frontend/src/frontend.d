@@ -1,6 +1,6 @@
 frontend.o: frontend.c ../../libopencm3/include/libopencm3/cm3/cortex.h \
- /usr/lib/gcc/arm-none-eabi/7.1.0/include/stdbool.h \
- /usr/lib/gcc/arm-none-eabi/7.1.0/include/stdint.h \
+ /usr/lib/gcc/arm-none-eabi/7.2.0/include/stdbool.h \
+ /usr/lib/gcc/arm-none-eabi/7.2.0/include/stdint.h \
  /usr/arm-none-eabi/include/stdint.h \
  /usr/arm-none-eabi/include/machine/_default_types.h \
  /usr/arm-none-eabi/include/sys/features.h \

@@ -23,10 +23,25 @@ static void systick_setup(int hz) {
 }
 
 static void clock_setup(void) {
-  rcc_clock_setup_in_hsi_out_48mhz();
+  //rcc_clock_setup_in_hsi_out_48mhz();
+  rcc_osc_on(RCC_HSI48);
+  rcc_wait_for_osc_ready(RCC_HSI48);
+
+  rcc_set_hpre(RCC_CFGR_HPRE_NODIV);
+  rcc_set_ppre(RCC_CFGR_PPRE_NODIV);
+
+  flash_set_ws(FLASH_ACR_LATENCY_024_048MHZ);
+
+  rcc_set_sysclk_source(RCC_HSI48);
+
+  //rcc_apb1_frequency = 48000000;
+  //rcc_ahb_frequency = 48000000;
+
+
   rcc_periph_clock_enable(RCC_GPIOA);
   rcc_periph_clock_enable(RCC_GPIOB);
   rcc_periph_clock_enable(RCC_GPIOC);
+  rcc_periph_clock_enable(RCC_GPIOF);
 }
 
 static void gpio_setup(void) {
@@ -50,7 +65,16 @@ int main(void) {
   clock_setup();
   gpio_setup();
 
-  systick_setup(1);
+  //systick_setup(1);
+
+  for (int j = 0; j < 20; ++j) {
+    gpio_toggle(GPIOC, GPIO13);
+    gpio_toggle(GPIOC, GPIO14);
+    gpio_toggle(GPIOC, GPIO15);
+    for (volatile int i = 0; i < 200000; ++i) {
+      __asm__("nop");
+    }
+  }
 
   sh1106_begin(0, 255, 3);
   sh1106_goto(0, 6);

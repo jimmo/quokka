@@ -180,7 +180,8 @@ void sh1106_spi_init(void) {
   gpio_mode_setup(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO13 | GPIO15);
   gpio_set_output_options(GPIOB, GPIO_OTYPE_PP, GPIO_OSPEED_50MHZ, GPIO13 | GPIO15);
 
-  gpio_set(GPIOB, GPIO13);}
+  gpio_set(GPIOB, GPIO13);
+}
 
 
 void spi_bit(int n);
@@ -207,6 +208,11 @@ void sh1106_begin(int invert, uint8_t contrast, uint8_t Vpp) {
   // CS
   gpio_mode_setup(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO1);
   gpio_set(GPIOB, GPIO1); // CS
+
+  // 8-bit
+  // D/~C
+  gpio_mode_setup(GPIOF, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO1);
+
 
   //SPI.begin();
   //if (fastSpi)
@@ -331,7 +337,16 @@ void sh1106_write_lcd_buf(uint8_t dataOrCommand, const uint8_t *data, uint16_t c
 
   for (uint16_t i = count; i > 0; i--)
     {
-      spi_bit(dataOrCommand);
+      // 9-bit
+      //spi_bit(dataOrCommand);
+
+      // 8-bit
+      if (dataOrCommand) {
+        gpio_set(GPIOF, GPIO1);
+      } else {
+        gpio_clear(GPIOF, GPIO1);
+      }
+
       for (uint8_t x = 0; x < 8; ++x) {
         spi_bit(data[count-i] & (1 << (7-x)));
       }
@@ -347,7 +362,19 @@ void sh1106_write_lcd(uint8_t dataOrCommand, uint8_t data)
   gpio_clear(GPIOB, GPIO1); // ~CS
   //spi_send8(SPI2, dataOrCommand);
   //spi_send8(SPI2, data);
-  spi_bit(dataOrCommand);
+
+
+  // 9-bit
+  // spi_bit(dataOrCommand);
+
+
+  // 8-bit
+  if (dataOrCommand) {
+    gpio_set(GPIOF, GPIO1);
+  } else {
+    gpio_clear(GPIOF, GPIO1);
+  }
+
   for (uint8_t x = 0; x < 8; ++x) {
     spi_bit(data & (1 << (7-x)));
   }
