@@ -1,34 +1,20 @@
 import machine
+import quokka
 
-spi = machine.SPI('Y', baudrate=10000000)
+quokka.display.fill(1)
+quokka.display.text('radio', 5, 5, 0)
+quokka.display.show()
 
+quokka.radio.enable()
+print('version:', quokka.radio.version())
 
-import ssd1306
-disp_slave_select = machine.Pin('Y5', machine.Pin.OUT)
-disp_slave_select.value(1)
-d = ssd1306.SSD1306_SPI(128, 64, spi, machine.Pin('X11'), machine.Pin('X22'), disp_slave_select)
-
-import quokka_radio
-nrf_slave_select = machine.Pin('Y4', machine.Pin.OUT)
-nrf_slave_select.value(1)
-r = quokka_radio.Radio(nrf_slave_select, spi)
-
-d.fill(1)
-d.text('radio', 5, 5, 0)
-d.show()
-
-r.enable()
-print('version:', r.version())
-print('version:', r.version())
-
-import pyb
-pyb.LED(2).on()
-
-r.set_channel(22)
+quokka.radio.config(channel=22)
 
 while True:
-    msg = r.receive()
-    if msg:
-        d.fill(1)
-        d.text(msg, 5, 5, 0)
-        d.show()
+  msg = quokka.radio.receive()
+  if msg:
+    quokka.display.fill(1)
+    quokka.display.text(msg, 5, 5, 0)
+    quokka.display.show()
+  if quokka.buttons.a.was_pressed():
+    quokka.radio.send('a')
