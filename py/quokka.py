@@ -2,6 +2,8 @@ import pyb
 import machine
 import time
 
+import framebuf
+
 
 class QuokkaNeoPixels():
   def __init__(self):
@@ -37,6 +39,7 @@ class QuokkaNeoPixels():
     self.set_pixel(n, r * 255 // 255, g * 255 // 255, b * 255 // 255,)
 
   def show(self):
+    return
     self._pin.neo(self._buf)
 
   def clear(self):
@@ -191,7 +194,24 @@ import drivers
 
 class QuokkaDisplay(drivers.SSD1306_SPI):
   def __init__(self, spi):
-    super().__init__(128, 64, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+    self.width = 128
+    self.height = 64
+    super().__init__(self.width, self.height, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+
+    buf = bytearray(self.pages * self.width)
+    self._virtual_fb = framebuf.FrameBuffer(buf, self.width, self.height, framebuf.MONO_VLSB)
+    self._virtual_fb.fill(0)
+
+  def large_text(self, text, top_x, top_y, scale=4):
+    self.fill(0)
+    self._virtual_fb.fill(0)
+    self._virtual_fb.text(text, top_x, top_y, 1)
+    for x in range(self.width // scale):
+        for y in range(self.height // scale):
+            #self.pixel(scale * x, scale * y, self._virtual_fb.pixel(x,y)) 
+            self.fill_rect(scale * x, scale * y, scale, scale, self._virtual_fb.pixel(x, y))
+    self.show()
+
 
 display = QuokkaDisplay(_internal_spi)
 
