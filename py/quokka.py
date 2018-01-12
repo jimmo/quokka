@@ -2,23 +2,13 @@ import pyb
 import machine
 import time
 
-import drivers
-
-__all__ = ['display', 'neopixels', 'radio', 'buttons', 'leds', 'sleep', 'sleep_us', 'temperature', 'running_time', 'accelerometer', 'gyro', 'compass',]
-
-
-_imu = drivers.MPU9250('Y')
-
-
-class QuokkaDisplay(drivers.SSD1306_SPI):
-  def __init__(self, spi):
-    super().__init__(128, 64, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
-
 
 class QuokkaNeoPixels():
   def __init__(self):
     self._pin = machine.Pin('X12', machine.Pin.OUT)
+    self._pin.off()
     self._buf = bytearray(8*3)
+    self.show()
 
   def _rainbow(h):
     # h is hue between 0-119.
@@ -104,19 +94,115 @@ class QuokkaButtons():
       b._tick()
 
 
+class QuokkaPin():
+  def __init__(self, name):
+    self._name = name
+    self._mode_input()
+
+  def _mode_input(self):
+    self._pin = machine.Pin(self._name, machine.Pin.IN, machine.Pin.PULL_NONE)
+
+  def _mode_output(self):
+    self._pin = machine.Pin(self._name, machine.Pin.OUT)
+
+  def on(self):
+    self._mode_output()
+    self._pin.on()
+
+  def off(self):
+    self._mode_output()
+    self._pin.off()
+
+  def toggle(self):
+    self._mode_output()
+    self._pin.toggle()
+
+  def write_digital(self, b):
+    self._mode_output()
+    self._pin.value(1 if b else 0)
+
+  def read_digital(self):
+    self._mode_input()
+    return self._pin.value()
+
+
+class QuokkaPinAnalog(QuokkaPin):
+  def __init__(self, name):
+    super().__init__(name)
+
+  def _mode_analog(self):
+    self._mode_input()
+    self._adc = pyb.ADC(self._name)
+
+  def read_analog(self):
+    self._mode_analog()
+    return self._adc.read()
+
+  def write_analog(self, v):
+    return
+
+
+class QuokkaPinDac(QuokkaPinAnalog):
+  def __init__(self, name):
+    super().__init__(name)
+
+  def write_dac(self, v):
+    return
+
+
+class QuokkaGrove():
+  def __init__(self, p0, p1, analog=False):
+    if analog:
+      if p0 == 'X5':
+        self.pin0 = QuokkaPinDac(p0)
+      else:
+        self.pin0 = QuokkaPinAnalog(p0)
+      self.pin1 = QuokkaPinAnalog(p1)
+    else:
+      self.pin0 = QuokkaPin(p0)
+      self.pin1 = QuokkaPin(p1)
+
+
+class QuokkaGroves():
+  def __init__(self):
+    self.a = QuokkaGrove('X9', 'X10') # I2C SCL/SDA
+    self.b = QuokkaGrove('Y2', 'Y1')  # UART 6
+    self.c = QuokkaGrove('X4', 'X3', analog=True)  # ADC, UART 2
+    self.d = QuokkaGrove('X6', 'X8')  # SPI CLK/MOSI
+    self.e = QuokkaGrove('X2', 'X1', analog=True)  # ADC, UART 4
+    self.f = QuokkaGrove('X5', 'Y12', analog=True) # ADC, DAC pin 0
+    self.all = (self.a, self.b, self.c, self.d, self.e, self.f,)
+
+
+neopixels = QuokkaNeoPixels()
+leds = QuokkaLeds()
+buttons = QuokkaButtons()
+groves = QuokkaGroves()
+
+sleep = time.sleep_ms
+sleep_us = time.sleep_us
+
+
 _internal_spi = machine.SPI('Y', baudrate=2000000)
+spi = machine.SPI('X')
+i2c = machine.I2C('X')
+
+import drivers
+
+class QuokkaDisplay(drivers.SSD1306_SPI):
+  def __init__(self, spi):
+    super().__init__(128, 64, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+
+display = QuokkaDisplay(_internal_spi)
+
+_imu = drivers.MPU9250('Y')
 
 accelerometer = _imu.accel
 compass = _imu.mag
 gyro = _imu.gyro
-display = QuokkaDisplay(_internal_spi)
-radio = drivers.QuokkaRadio(machine.Pin('Y4', machine.Pin.OUT), _internal_spi)
-neopixels = QuokkaNeoPixels()
-leds = QuokkaLeds()
-buttons = QuokkaButtons()
 
-sleep = time.sleep_ms
-sleep_us = time.sleep_us
+
+radio = drivers.QuokkaRadio(machine.Pin('Y4', machine.Pin.OUT), _internal_spi)
 
 def temperature():
   return _imu.temperature
@@ -128,3 +214,5 @@ def _on_tick(t):
   buttons._tick()
 
 timer_tick = pyb.Timer(1, freq=200, callback=_on_tick)
+
+__all__ = ['display', 'neopixels', 'radio', 'buttons', 'leds', 'sleep', 'sleep_us', 'temperature', 'running_time', 'accelerometer', 'gyro', 'compass',]
