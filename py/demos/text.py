@@ -1,5 +1,9 @@
 import quokka
 
 d = quokka.display
-d.large_text("duck", 0, 0, scale=4)
-d.large_text("nicky", 0, 32, scale=3)
+BLACK = 0
+WHITE = 1
+d.large_text("yo", 0, 0, WHITE, scale=5)
+d.show()
+d.large_text("wassup", 32, 40, WHITE, scale=2)
+d.show()
