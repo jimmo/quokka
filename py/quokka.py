@@ -222,6 +222,7 @@ class QuokkaDisplay(drivers.SSD1306_SPI):
     if scale == 1:
       super().text(x, y, color)
     else:
+      # This could be smaller - only needs to be big enough to hold text.
       buf = bytearray(self.pages * self.width)
       fb = framebuf.FrameBuffer(buf, self.width, self.height, framebuf.MONO_VLSB)
       bg = 1 - color
