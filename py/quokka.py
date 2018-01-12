@@ -2,6 +2,8 @@ import pyb
 import machine
 import time
 
+import framebuf
+
 
 class QuokkaNeoPixels():
   def __init__(self):
@@ -37,6 +39,7 @@ class QuokkaNeoPixels():
     self.set_pixel(n, r * 255 // 255, g * 255 // 255, b * 255 // 255,)
 
   def show(self):
+    return
     self._pin.neo(self._buf)
 
   def clear(self):
@@ -191,7 +194,44 @@ import drivers
 
 class QuokkaDisplay(drivers.SSD1306_SPI):
   def __init__(self, spi):
-    super().__init__(128, 64, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+    self.width = 128
+    self.height = 64
+    super().__init__(self.width, self.height, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+
+    buf = bytearray(self.pages * self.width)
+    self._virtual_fb = framebuf.FrameBuffer(buf, self.width, self.height, framebuf.MONO_VLSB)
+    self._virtual_fb.fill(0)
+
+
+  def clear(self):
+    self._text_x, self._text_y = (0, 0)
+    self.fill(0)
+    self.show()
+
+
+  def text(self, text, x, y, colour, scale=1):
+      self.large_text(text, x, y, colour, scale=scale)
+
+
+  def large_text(self, text, top_x, top_y, colour, scale=4):
+    bg_colour = (colour + 1) % 2
+    self._virtual_fb.fill(bg_colour)
+    self._virtual_fb.text(text, 0, 0, colour)
+    
+    # we use a temporary framebuffer so we can take advantage of the blit method
+    # to keep the background colour transparent
+    buf = bytearray(self.pages * self.width)
+    temp_fb = framebuf.FrameBuffer(buf, self.width, self.height, framebuf.MONO_VLSB)
+
+    for x in range(self.width // scale):
+      for y in range(self.height // scale):
+        temp_fb.fill_rect(top_x + scale * x, top_y + scale * y, 
+                scale, scale, self._virtual_fb.pixel(x, y))
+        
+    self.blit(temp_fb, 0, 0, bg_colour) 
+
+
+
 
 display = QuokkaDisplay(_internal_spi)
 
