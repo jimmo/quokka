@@ -203,13 +203,12 @@ class QuokkaDisplay(drivers.SSD1306_SPI):
     self._virtual_fb.fill(0)
 
   def large_text(self, text, top_x, top_y, scale=4):
-    self.fill(0)
     self._virtual_fb.fill(0)
-    self._virtual_fb.text(text, top_x, top_y, 1)
+    self._virtual_fb.text(text, 0, 0, 1)
     for x in range(self.width // scale):
         for y in range(self.height // scale):
             #self.pixel(scale * x, scale * y, self._virtual_fb.pixel(x,y)) 
-            self.fill_rect(scale * x, scale * y, scale, scale, self._virtual_fb.pixel(x, y))
+            self.fill_rect(top_x + scale * x, top_y + scale * y, scale, scale, self._virtual_fb.pixel(x, y))
     self.show()
 
 
