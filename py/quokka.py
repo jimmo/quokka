@@ -220,7 +220,7 @@ class QuokkaDisplay(drivers.SSD1306_SPI):
 
   def text(self, text, x, y, color, scale=1):
     if scale == 1:
-      super().text(x, y, color)
+      super().text(text, x, y, color)
     else:
       # This could be smaller - only needs to be big enough to hold text.
       buf = bytearray(self.pages * self.width)
