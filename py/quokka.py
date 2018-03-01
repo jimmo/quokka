@@ -26,6 +26,7 @@ class QuokkaNeoPixels():
     else:
       return (255, 0, ((120-h) * 255) // 20,)
 
+  # Should probably update to use indexing (like the micro:bit version).
   def set_pixel(self, n, r, g, b):
     if n < 0 or n >= 8:
       return
@@ -68,6 +69,7 @@ class QuokkaButton():
     self._was = False
 
   def _tick(self):
+    # Update was_pressed state.
     if self.is_pressed() and not self._last:
       self._was = True
     self._last = self.is_pressed()
@@ -84,9 +86,9 @@ class QuokkaButton():
 class QuokkaButtons():
   def __init__(self):
     self.a = QuokkaButton(machine.Pin('X18'))
-    self.b = QuokkaButton(machine.Pin('X19'))
-    self.c = QuokkaButton(machine.Pin('X20'))
-    self.d = QuokkaButton(machine.Pin('X21'))
+    self.c = QuokkaButton(machine.Pin('X19'))
+    self.d = QuokkaButton(machine.Pin('X20'))
+    self.b = QuokkaButton(machine.Pin('X21'))
     self.usr = QuokkaButton(machine.Pin('X17'))
     self.all = (self.a, self.b, self.c, self.d,)
 
@@ -212,10 +214,13 @@ import drivers
 class QuokkaDisplay(drivers.SSD1306_SPI):
   def __init__(self, spi):
     super().__init__(128, 64, spi, machine.Pin('X11', machine.Pin.OUT), machine.Pin('X22', machine.Pin.OUT), machine.Pin('Y5', machine.Pin.OUT), external_vcc=True)
+
+    # Unused, for tracking cursor position.
     self.text_x = 0
     self.text_y = 0
 
   def print(self, text, color=1):
+    # Use text_x, text_y to provide a useful text output mode.
     pass
 
   def text(self, text, x, y, color, scale=1):
@@ -245,13 +250,16 @@ display = QuokkaDisplay(_internal_spi)
 
 _imu = drivers.MPU9250('Y')
 
+# Note that these provide .x, .y, etc, rather tha micro:bit's get_x().
 accelerometer = _imu.accel
 compass = _imu.mag
 gyro = _imu.gyro
 
 
+# Need to update the radio module to look more like the micro:bit (e.g. on/off).
 radio = drivers.QuokkaRadio(machine.Pin('Y4', machine.Pin.OUT), _internal_spi)
 
+# Mirror a few micro:bit functions.
 def temperature():
   return _imu.temperature
 
@@ -261,6 +269,7 @@ def running_time():
 def _on_tick(t):
   buttons._tick()
 
+# Currently used for button was_pressed.
 timer_tick = pyb.Timer(1, freq=200, callback=_on_tick)
 
 __all__ = ['display', 'neopixels', 'radio', 'buttons', 'leds', 'sleep', 'sleep_us', 'temperature', 'running_time', 'accelerometer', 'gyro', 'compass',]
