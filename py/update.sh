@@ -7,10 +7,12 @@
 # For setting up a new Quokka, pass the -u flag to the script.
 # This copies all libraries and the selected file as as main.py.
 
+# Disable connecting the serial console with -n
+
 # For ongoing development, the workflow is to set up three terminals:
 # 1. screen /dev/ttyACM0 115200
 # 2. editor (e.g. path-to-my-program.py)
-# 3. ./update.sh path-to-my-program.py
+# 3. ./update.sh -n path-to-my-program.py
 # Then for every update, run #3, then in #1:
 #   - Ctrl-C (to stop current program)
 #   - Ctrl-D (to force filesystem reload and start the new program)
@@ -37,6 +39,13 @@ if [ "$1" = "-u" ]; then
     shift
 fi
 
+CONNECT_SERIAL=0
+# If the -n flag is given, remember to skip the serial console
+if [ "$1" = "-n" ]; then
+    CONNECT_SERIAL=1
+    shift
+fi
+
 # If there is no argument given, copy main.py, otherwise copy the named demo
 if [ $# -eq 0 ]; then
     cp main.py /$VOL_DIR/$VOL_NAME/main.py
@@ -46,8 +55,10 @@ else
 fi
 sync
 
-if [ $OSX -eq 0 ]; then
-    screen /dev/ttyACM0 115200
-else
-    screen $(ls /dev/tty.usbmodem* | head -n1) 115200
+if [ $CONNECT_SERIAL -eq 1 ]; then
+    if [ $OSX -eq 0 ]; then
+        screen /dev/ttyACM0 115200
+    else
+        screen $(ls /dev/tty.usbmodem* | head -n1) 115200
+    fi
 fi
