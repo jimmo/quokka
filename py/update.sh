@@ -39,10 +39,10 @@ if [ "$1" = "-u" ]; then
     shift
 fi
 
-CONNECT_SERIAL=0
+CONNECT_SERIAL=1
 # If the -n flag is given, remember to skip the serial console
 if [ "$1" = "-n" ]; then
-    CONNECT_SERIAL=1
+    CONNECT_SERIAL=0
     shift
 fi
 
