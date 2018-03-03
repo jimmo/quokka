@@ -36,8 +36,14 @@ if [ "$1" = "-u" ]; then
     cp drivers/*.py /$VOL_DIR/$VOL_NAME/drivers/
     shift
 fi
-# Copy the demo onto the board
-cp demos/${1}.py /$VOL_DIR/$VOL_NAME/main.py
+
+# If there is no argument given, copy main.py, otherwise copy the named demo
+if [ $# -eq 0 ]; then
+    cp main.py /$VOL_DIR/$VOL_NAME/main.py
+else
+    # Copy the demo onto the board
+    cp demos/${1}.py /$VOL_DIR/$VOL_NAME/main.py
+fi
 sync
 
 if [ $OSX -eq 0 ]; then
