@@ -1,16 +1,16 @@
 #!/bin/bash
 
-# Copies one of the demos to the quokka as main,py
-# e.g.   ./update.sh buttons-display-neopixels
+# Copies a file to the quokka as main.py (and optionally adds all the quokka libraries).
+# e.g.   ./update.sh demos/buttons-display-neopixels.py
 # After copying everything, it connects the serial console so you can Ctrl-C/Ctrl-D.
 
 # For setting up a new Quokka, pass the -u flag to the script.
-# This copies all libraries and one of the demos onto the board as main.py.
+# This copies all libraries and the selected file as as main.py.
 
-# For ongoing development, rather than using this script, set up three terminals:
+# For ongoing development, the workflow is to set up three terminals:
 # 1. screen /dev/ttyACM0 115200
-# 2. editor (e.g. main.py)
-# 3. prompt $ cp {filename}.py /media/PYBFLASH/main.py && sync
+# 2. editor (e.g. path-to-my-program.py)
+# 3. ./update.sh path-to-my-program.py
 # Then for every update, run #3, then in #1:
 #   - Ctrl-C (to stop current program)
 #   - Ctrl-D (to force filesystem reload and start the new program)
@@ -41,8 +41,8 @@ fi
 if [ $# -eq 0 ]; then
     cp main.py /$VOL_DIR/$VOL_NAME/main.py
 else
-    # Copy the demo onto the board
-    cp demos/${1}.py /$VOL_DIR/$VOL_NAME/main.py
+    # Copy the argument onto the board
+    cp ${1} /$VOL_DIR/$VOL_NAME/main.py
 fi
 sync
 
