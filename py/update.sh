@@ -15,20 +15,33 @@
 #   - Ctrl-C (to stop current program)
 #   - Ctrl-D (to force filesystem reload and start the new program)
 
+# Check if we are on a mac
+if [ `uname` = "Darwin" ]; then
+    VOL_DIR="Volumes"
+    OSX=1
+else
+    VOL_DIR="media"
+    OSX=0
+fi
+
 # If using an SD card with your quokka, update this volume name
 VOL_NAME="PYBFLASH"
 
 # If the -u flag is given, update the libraries
 # Otherwise, only the main files are updated
 if [ "$1" = "-u" ]; then
-    cp quokka.py /media/$VOL_NAME/
-    cp boot.py /media/$VOL_NAME/
-    mkdir -p /media/$VOL_NAME/drivers
-    cp drivers/*.py /media/$VOL_NAME/drivers/
+    cp quokka.py /$VOL_DIR/$VOL_NAME/
+    cp boot.py /$VOL_DIR/$VOL_NAME/
+    mkdir -p /$VOL_DIR/$VOL_NAME/drivers
+    cp drivers/*.py /$VOL_DIR/$VOL_NAME/drivers/
     shift
 fi
 # Copy the demo onto the board
-cp demos/${1}.py /media/$VOL_NAME/main.py
+cp demos/${1}.py /$VOL_DIR/$VOL_NAME/main.py
 sync
 
-screen /dev/ttyACM0 115200
+if [ $OSX -eq 0 ]; then
+    screen /dev/ttyACM0 115200
+else
+    screen $(ls /dev/tty.usbmodem* | head -n1) 115200
+fi
