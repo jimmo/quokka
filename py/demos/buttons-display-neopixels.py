@@ -22,21 +22,25 @@ while True:
     quokka.neopixels.set_pixel(1, 255, 0, 0)
   else:
     quokka.neopixels.set_pixel(1, 0, 0, 0)
-    
+
   if quokka.buttons.c.is_pressed():
     quokka.display.text('c', 35, 5, 1)
     quokka.neopixels.set_pixel(2, 255, 0, 0)
   else:
     quokka.neopixels.set_pixel(2, 0, 0, 0)
-    
+
   if quokka.buttons.d.is_pressed():
     quokka.display.text('d', 50, 5, 1)
     quokka.neopixels.set_pixel(3, 255, 0, 0)
   else:
     quokka.neopixels.set_pixel(3, 0, 0, 0)
-    
+
   if quokka.buttons.usr.is_pressed():
     quokka.display.text('u', 65, 5, 1)
+    quokka.neopixels.set_pixel(4, 255, 0, 0)
+  else:
+    quokka.neopixels.set_pixel(4, 0, 0, 0)
+
   quokka.neopixels.show()
   quokka.display.show()
   quokka.sleep(50)
