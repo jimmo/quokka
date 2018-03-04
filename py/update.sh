@@ -36,10 +36,18 @@ VOL_NAME="PYBFLASH"
 # If the -u flag is given, update the libraries
 # Otherwise, only the main files are updated
 if [ "$1" = "-u" ]; then
-    $CP quokka.py /$VOL_DIR/$VOL_NAME/
-    $CP boot.py /$VOL_DIR/$VOL_NAME/
+    sed "/^\W*#/d" quokka.py | sed "/^\W*$/d" > strip_quokka.py
+    sed "/^\W*#/d" boot.py | sed "/^\W*$/d" > strip_boot.py
+    $CP strip_quokka.py /$VOL_DIR/$VOL_NAME/quokka.py
+    $CP strip_boot.py /$VOL_DIR/$VOL_NAME/boot.py
+    rm strip_quokka.py strip_boot.py
     mkdir -p /$VOL_DIR/$VOL_NAME/drivers
-    $CP drivers/*.py /$VOL_DIR/$VOL_NAME/drivers/
+    for file in drivers/*.py; do
+        file=`basename $file`
+        sed "/^\W*#/d" drivers/$file | sed "/^\W*$/d" > drivers/strip_$file
+        $CP drivers/strip_$file /$VOL_DIR/$VOL_NAME/drivers/$file
+        rm drivers/strip_$file
+    done
     shift
 fi
 
