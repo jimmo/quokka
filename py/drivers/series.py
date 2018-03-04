@@ -1,5 +1,5 @@
 class Series():
-    def __init__(self, x_or_y, y=None,
+    def __init__(self, x_or_y=[], y=None,
                  name=None,
                  x_units=None, x_label=None,
                  y_units=None, y_label=None,
@@ -98,7 +98,7 @@ class Series():
             self._upd_y_lim(x_or_val)
 
 class BoundedSeries(Series):
-    def __init__(self, max_len, x_or_y, y=None, *args, **kwargs):
+    def __init__(self, max_len, x_or_y=[], y=None, *args, **kwargs):
         # Check max_len is given and valid
         if not isinstance(max_len, int) or max_len <= 0:
             raise ValueError("max_len must be an integer greater than 0")
