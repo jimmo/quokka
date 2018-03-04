@@ -17,10 +17,14 @@
 #   - Ctrl-C (to stop current program)
 #   - Ctrl-D (to force filesystem reload and start the new program)
 
+CP=cp
+
 # Check if we are on a mac
 if [ `uname` = "Darwin" ]; then
     VOL_DIR="Volumes"
     OSX=1
+    # Disable copying extended attributes.
+    CP="cp -X"
 else
     VOL_DIR="media"
     OSX=0
@@ -32,10 +36,10 @@ VOL_NAME="PYBFLASH"
 # If the -u flag is given, update the libraries
 # Otherwise, only the main files are updated
 if [ "$1" = "-u" ]; then
-    cp quokka.py /$VOL_DIR/$VOL_NAME/
-    cp boot.py /$VOL_DIR/$VOL_NAME/
+    $CP quokka.py /$VOL_DIR/$VOL_NAME/
+    $CP boot.py /$VOL_DIR/$VOL_NAME/
     mkdir -p /$VOL_DIR/$VOL_NAME/drivers
-    cp drivers/*.py /$VOL_DIR/$VOL_NAME/drivers/
+    $CP drivers/*.py /$VOL_DIR/$VOL_NAME/drivers/
     shift
 fi
 
@@ -48,10 +52,10 @@ fi
 
 # If there is no argument given, copy main.py, otherwise copy the named demo
 if [ $# -eq 0 ]; then
-    cp main.py /$VOL_DIR/$VOL_NAME/main.py
+    $CP main.py /$VOL_DIR/$VOL_NAME/main.py
 else
     # Copy the argument onto the board
-    cp ${1} /$VOL_DIR/$VOL_NAME/main.py
+    $CP ${1} /$VOL_DIR/$VOL_NAME/main.py
 fi
 sync
 
