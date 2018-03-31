@@ -5,11 +5,15 @@ import time
 
 
 class QuokkaNeoPixels():
-  def __init__(self):
+  def __init__(self, brightness=100):
     self._pin = machine.Pin('X12', machine.Pin.OUT)
     self._pin.off()
     self._buf = bytearray(8*3)
+    self.brightness = brightness
     self.show()
+
+  def set_brightness(self, brightness):
+    self.brightness = brightness
 
   def _rainbow(h):
     # h is hue between 0-119.
@@ -30,9 +34,19 @@ class QuokkaNeoPixels():
   def set_pixel(self, n, r, g, b):
     if n < 0 or n >= 8:
       return
+    if self.brightness < 100:
+      r = self.scale_colour(r)
+      g = self.scale_colour(g)
+      b = self.scale_colour(b)
     self._buf[n*3] = g
     self._buf[n*3+1] = r
     self._buf[n*3+2] = b
+
+  def get_pixel(self, n):
+    r = self._buf[n*3+1]
+    g = self._buf[n*3]
+    b = self._buf[n*3 + 2]
+    return r, g, b
 
   def set_pixel_rainbow(self, n, h, l=255):
     r, g, b, = QuokkaNeoPixels._rainbow(h)
@@ -45,8 +59,12 @@ class QuokkaNeoPixels():
     self.all(0, 0, 0)
 
   def all(self, r, g, b):
-    for i in range(10):
+    for i in range(8):
       self.set_pixel(i, r, g, b,)
+
+  def scale_colour(self, colour):
+    return int(colour*self.brightness/100)
+
 
 
 class QuokkaLeds():
