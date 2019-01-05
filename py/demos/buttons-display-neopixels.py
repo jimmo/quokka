@@ -1,46 +1,48 @@
 import quokka
+import neopixel
+import radio
 
-quokka.display.fill(0)
-quokka.display.text(quokka.radio.version(), 0, 0, 1)
-quokka.display.show()
+n = neopixel.NeoPixel()
+
+quokka.display.print(radio.version())
 quokka.sleep(1000)
-quokka.neopixels.clear()
-quokka.neopixels.show()
+n.clear()
+n.show()
 
 
 while True:
   quokka.display.fill(0)
 
-  if quokka.buttons.a.is_pressed():
-    quokka.display.text('a', 5, 5, 1)
-    quokka.neopixels.set_pixel(0, 255, 0, 0)
+  if quokka.button_a.is_pressed():
+    quokka.display.print('a')
+    n.set_pixel(0, 255, 0, 0)
   else:
-    quokka.neopixels.set_pixel(0, 0, 0, 0)
+    n.set_pixel(0, 0, 0, 0)
 
-  if quokka.buttons.b.is_pressed():
-    quokka.display.text('b', 20, 5, 1)
-    quokka.neopixels.set_pixel(1, 255, 0, 0)
+  if quokka.button_b.is_pressed():
+    quokka.display.print('b')
+    n.set_pixel(1, 255, 0, 0)
   else:
-    quokka.neopixels.set_pixel(1, 0, 0, 0)
+    n.set_pixel(1, 0, 0, 0)
 
-  if quokka.buttons.c.is_pressed():
-    quokka.display.text('c', 35, 5, 1)
-    quokka.neopixels.set_pixel(2, 255, 0, 0)
+  if quokka.button_c.is_pressed():
+    quokka.display.print('c')
+    n.set_pixel(2, 255, 0, 0)
   else:
-    quokka.neopixels.set_pixel(2, 0, 0, 0)
+    n.set_pixel(2, 0, 0, 0)
 
-  if quokka.buttons.d.is_pressed():
-    quokka.display.text('d', 50, 5, 1)
-    quokka.neopixels.set_pixel(3, 255, 0, 0)
+  if quokka.button_d.is_pressed():
+    quokka.display.print('d')
+    n.set_pixel(3, 255, 0, 0)
   else:
-    quokka.neopixels.set_pixel(3, 0, 0, 0)
+    n.set_pixel(3, 0, 0, 0)
 
-  if quokka.buttons.usr.is_pressed():
-    quokka.display.text('u', 65, 5, 1)
-    quokka.neopixels.set_pixel(4, 255, 0, 0)
+  if quokka.button_usr.is_pressed():
+    quokka.display.print('u')
+    n.set_pixel(4, 255, 0, 0)
   else:
-    quokka.neopixels.set_pixel(4, 0, 0, 0)
+    n.set_pixel(4, 0, 0, 0)
 
-  quokka.neopixels.show()
+  n.show()
   quokka.display.show()
   quokka.sleep(50)

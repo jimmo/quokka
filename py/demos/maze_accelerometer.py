@@ -193,7 +193,7 @@ def physics_method():
   t_old = t_new
 
   try:
-    accel_vec = quokka.accelerometer.xyz
+    accel_vec = quokka.accelerometer.get_values()
     a_y = -200.0*accel_vec[1]
     a_x = -200.0*accel_vec[0]
   except OSError as e:
