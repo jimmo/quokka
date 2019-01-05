@@ -2,27 +2,27 @@ import machine
 import quokka
 import sys
 
-quokka.display.fill(1)
-quokka.display.text('radio', 5, 5, 0)
-quokka.display.show()
+quokka.display.print('radio')
 
-v = quokka.radio.version()
+import radio
+v = radio.version()
 if not v:
+  quokka.display.print('bad radio')
+  quokka.display.show()
   sys.exit(0)
 
-quokka.display.text('version:' + v, 5, 20, 0)
+quokka.display.print('version: ' + v)
 
-quokka.radio.on()
+radio.on()
 
-quokka.radio.config(channel=22)
+radio.config(channel=22)
 
 while True:
-  msg = quokka.radio.receive()
+  msg = radio.receive()
   if msg:
-    quokka.display.fill(1)
-    quokka.display.text(msg, 5, 5, 0)
-    quokka.display.show()
+    quokka.display.clear()
+    quokka.display.print(msg)
   if quokka.buttons.a.was_pressed():
-    quokka.radio.send('a')
+    radio.send('a')
   if quokka.buttons.b.was_pressed():
-    quokka.radio.send('b')
+    radio.send('b')
