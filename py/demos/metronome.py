@@ -106,8 +106,6 @@ def update_display():
   quokka.display.show()  # show the display
 
 
-# quokka.display.line(x1, y1, x2, y2, color)
-
 start_flash_beat()
 update_display()
 while True:
