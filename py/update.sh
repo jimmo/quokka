@@ -44,7 +44,7 @@ if [ "$1" = "-u" ]; then
     mkdir -p /$VOL_DIR/$VOL_NAME/drivers
     for file in drivers/*.py; do
         file=`basename $file`
-        sed "/^\W*#/d" drivers/$file | sed "/^\W*$/d" > drivers/strip_$file
+        sed "/^\s*#/d" drivers/$file | sed "/^\s*$/d" > drivers/strip_$file
         $CP drivers/strip_$file /$VOL_DIR/$VOL_NAME/drivers/$file
         rm drivers/strip_$file
     done

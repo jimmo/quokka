@@ -1,3 +1,6 @@
+import neopixel
+neo = neopixel.NeoPixel()
+
 import quokka
 import time
 import math
@@ -41,7 +44,7 @@ def start_flash_beat():
   if current_beat == 0:
     indexes = range(8)
 
-  quokka.neopixels.clear()
+  neo.clear()
   for i in indexes:
     if i % 4 == 0:
       red, green, blue = 0, 64, 0
@@ -51,12 +54,12 @@ def start_flash_beat():
       red, green, blue = 64, 0, 64
     if i % 4 == 3:
       red, green, blue = 64, 0, 0
-    quokka.neopixels.set_pixel(i, red, green, blue)
-  quokka.neopixels.show()
+    neo[i] = (red, green, blue)
+  neo.show()
 
 def finish_flash_beat():
-  quokka.neopixels.clear()
-  quokka.neopixels.show()
+  neo.clear()
+  neo.show()
 
 def change_bpm(amount):
   global MINUTE_MS, beat_duration_ms, bpm
@@ -118,18 +121,18 @@ while True:
     next_beat()
     start_flash_beat()
 
-  if quokka.buttons.a.was_pressed():
+  if quokka.button_a.was_pressed():
     change_bpm(-10)
     reset()
 
-  if quokka.buttons.b.was_pressed():
+  if quokka.button_b.was_pressed():
     change_bpm(10)
     reset()
 
-  if quokka.buttons.c.was_pressed():
+  if quokka.button_c.was_pressed():
     change_bpm(-1)
     reset()
 
-  if quokka.buttons.d.was_pressed():
+  if quokka.button_d.was_pressed():
     change_bpm(1)
     reset()
